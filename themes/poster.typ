@@ -74,8 +74,9 @@
   )
   set text(
     font: "Noto Sans CJK JP",
+    weight: "medium",
     size: 22pt,
-    fill: rgb("#222222"),
+    fill: rgb("#111111"),
   )
   set par(justify: false, leading: 0.84em)
   set heading(numbering: none)
