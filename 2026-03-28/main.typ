@@ -18,16 +18,9 @@
       #text(size: 22pt, fill: rgb("#555555"))[N高等学校 情報科学グループ]
     ],
     [
-      #rect(
-        width: 46mm,
-        height: 46mm,
-        stroke: 0.8pt + border,
-        fill: white,
+      #qr-panel(
+        "https://github.com/yutakobayashidev/talks/tree/main/2026-03-28",
       )
-      #v(-40mm)
-      #align(center + horizon)[#text(size: 17pt)[QR]]
-      #v(35mm)
-      #align(center)[#text(size: 14pt, fill: rgb("#555555"))[Web / GitHub]]
     ],
   )
 

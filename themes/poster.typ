@@ -1,3 +1,5 @@
+#import "@preview/zebra:0.1.0": qrcode
+
 #let border = rgb("#444444")
 #let light = rgb("#f7f7f7")
 
@@ -49,6 +51,19 @@
     #circle(radius: 9mm, fill: color, stroke: none)
     #v(2.5mm)
     #text(size: 15pt)[#label]
+  ]
+]
+
+#let qr-panel(url) = align(center + top)[
+  #block(width: 64mm)[
+    #align(center)[
+      #qrcode(
+        url,
+        quiet-zone: true,
+        background-fill: white,
+        width: 46mm,
+      )
+    ]
   ]
 ]
 
