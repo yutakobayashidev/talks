@@ -1,9 +1,9 @@
 #import "@preview/zebra:0.1.0": qrcode
 
-#let border = rgb("#444444")
-#let light = rgb("#f7f7f7")
+#let accent = rgb("#0f5b94")
+#let border = rgb("#cccccc")
 
-#let divider() = line(length: 100%, stroke: 0.8pt + border)
+#let divider() = line(length: 100%, stroke: 1pt + accent)
 
 #let section(title, body, level: 1) = block(
   width: 100%,
@@ -12,6 +12,7 @@
   #text(
     size: if level == 1 { 32pt } else { 26pt },
     weight: "bold",
+    fill: accent,
   )[
     #title
   ]
