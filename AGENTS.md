@@ -39,7 +39,7 @@ nix fmt
 - **`YYYY-MM-DD/`** — Each talk as a date-named directory containing `main.typ` and `README.md`
 - **`themes/`** — Shared Typst theme files (e.g., `poster.typ` for A0 poster layout)
 - **`flake.nix`** — Nix flake with `buildTypstProject` helper that compiles Typst to PDF. Supports `"article"` and `"slide"` types (slides additionally run `polylux2pdfpc`)
-- Fonts (EB Garamond, Noto CJK, HackGen, Garamond Math) and Typst packages are pinned via Nix
+- Fonts (EB Garamond, BIZ UDPGothic, Noto CJK, HackGen, Garamond Math) and Typst packages are pinned via Nix
 
 ## Conventions
 
