@@ -1,0 +1,1268 @@
+{
+  "_meta": {
+    "query_id": "cf_bgp_leaks_ve",
+    "collected_at": "2026-03-11T05:45:59.287910+00:00",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "success": true,
+    "errors": [],
+    "result": {
+      "asn_info": [
+        {
+          "asn": 174,
+          "org_name": "Cogent Communications",
+          "country_code": "US"
+        },
+        {
+          "asn": 3257,
+          "org_name": "GTT Communications Inc.",
+          "country_code": "US"
+        },
+        {
+          "asn": 3356,
+          "org_name": "Level 3 Parent, LLC",
+          "country_code": "US"
+        },
+        {
+          "asn": 6762,
+          "org_name": "TELECOM ITALIA SPARKLE S.p.A.",
+          "country_code": "IT"
+        },
+        {
+          "asn": 6939,
+          "org_name": "Hurricane Electric LLC",
+          "country_code": "US"
+        },
+        {
+          "asn": 8048,
+          "org_name": "CANTV Servicios, Venezuela",
+          "country_code": "VE"
+        },
+        {
+          "asn": 8053,
+          "org_name": "IFX Networks Venezuela C.A.",
+          "country_code": "VE"
+        },
+        {
+          "asn": 10293,
+          "org_name": "CANTV Servicios, Venezuela",
+          "country_code": "VE"
+        },
+        {
+          "asn": 11562,
+          "org_name": "Net Uno, C.A.",
+          "country_code": "VE"
+        },
+        {
+          "asn": 18678,
+          "org_name": "INTERNEXA S.A. E.S.P",
+          "country_code": "CO"
+        },
+        {
+          "asn": 19978,
+          "org_name": "CIRION TECHNOLOGIES ARGENTINA S.A.",
+          "country_code": "AR"
+        },
+        {
+          "asn": 23520,
+          "org_name": "Columbus Networks USA, Inc.",
+          "country_code": "US"
+        },
+        {
+          "asn": 52320,
+          "org_name": "GlobeNet Cabos Submarinos Colombia, S.A.S.",
+          "country_code": "CO"
+        },
+        {
+          "asn": 61461,
+          "org_name": "Airtek Solutions C.A.",
+          "country_code": "VE"
+        },
+        {
+          "asn": 262589,
+          "org_name": "SAMM TECNOLOGIA E TELECOMUNICACOES S.A",
+          "country_code": "BR"
+        },
+        {
+          "asn": 263703,
+          "org_name": "VIGINET C.A",
+          "country_code": "VE"
+        },
+        {
+          "asn": 270042,
+          "org_name": "RED DOT TECHNOLOGIES, C.A.",
+          "country_code": "VE"
+        },
+        {
+          "asn": 272102,
+          "org_name": "BESSER SOLUTIONS C.A.",
+          "country_code": "VE"
+        },
+        {
+          "asn": 394684,
+          "org_name": "GOLD DATA USA INC",
+          "country_code": "US"
+        }
+      ],
+      "events": [
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-03-06T00:44:26",
+          "finished": true,
+          "id": 486565,
+          "leak_asn": 270042,
+          "leak_count": 90,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-06T00:45:54",
+          "min_ts": "2026-03-06T00:44:26",
+          "origin_count": 1,
+          "peer_count": 64,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-03-05T15:31:09",
+          "finished": true,
+          "id": 486341,
+          "leak_asn": 8053,
+          "leak_count": 2,
+          "leak_seg": [
+            394684,
+            8053,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-06T20:58:04",
+          "min_ts": "2026-03-05T15:31:09",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-03-04T15:15:26",
+          "finished": true,
+          "id": 485816,
+          "leak_asn": 8048,
+          "leak_count": 3,
+          "leak_seg": [
+            6762,
+            8048,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-04T16:49:17",
+          "min_ts": "2026-03-04T15:15:18",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-03-04T15:05:22",
+          "finished": true,
+          "id": 485814,
+          "leak_asn": 10293,
+          "leak_count": 3,
+          "leak_seg": [
+            6762,
+            10293,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-04T15:05:22",
+          "min_ts": "2026-03-04T15:02:21",
+          "origin_count": 2,
+          "peer_count": 2,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-03-01T14:17:12",
+          "finished": true,
+          "id": 484589,
+          "leak_asn": 270042,
+          "leak_count": 146,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-03T16:18:19",
+          "min_ts": "2026-03-01T14:17:11",
+          "origin_count": 2,
+          "peer_count": 79,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-26T18:22:35",
+          "finished": true,
+          "id": 483667,
+          "leak_asn": 263703,
+          "leak_count": 783,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-03-01T02:08:09",
+          "min_ts": "2026-02-26T18:22:35",
+          "origin_count": 2,
+          "peer_count": 64,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-02-25T18:53:38",
+          "finished": true,
+          "id": 483265,
+          "leak_asn": 270042,
+          "leak_count": 52,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-25T18:54:49",
+          "min_ts": "2026-02-25T18:53:38",
+          "origin_count": 1,
+          "peer_count": 33,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-02-24T06:45:11",
+          "finished": true,
+          "id": 482555,
+          "leak_asn": 8053,
+          "leak_count": 20,
+          "leak_seg": [
+            394684,
+            8053,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-26T22:13:01",
+          "min_ts": "2026-02-24T06:45:11",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-24T00:55:58",
+          "finished": true,
+          "id": 482442,
+          "leak_asn": 272102,
+          "leak_count": 4,
+          "leak_seg": [
+            174,
+            272102,
+            6939
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-26T21:48:36",
+          "min_ts": "2026-02-24T00:55:58",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-23T14:56:39",
+          "finished": true,
+          "id": 482268,
+          "leak_asn": 263703,
+          "leak_count": 195,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-26T12:39:48",
+          "min_ts": "2026-02-23T14:56:39",
+          "origin_count": 2,
+          "peer_count": 20,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-20T13:50:03",
+          "finished": true,
+          "id": 481334,
+          "leak_asn": 263703,
+          "leak_count": 42,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-23T11:00:22",
+          "min_ts": "2026-02-20T13:50:03",
+          "origin_count": 2,
+          "peer_count": 16,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "US",
+            "BR",
+            "VE"
+          ],
+          "detected_ts": "2026-02-19T18:41:09",
+          "finished": true,
+          "id": 481069,
+          "leak_asn": 263703,
+          "leak_count": 1,
+          "leak_seg": [
+            262589,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-19T18:41:09",
+          "min_ts": "2026-02-19T18:41:09",
+          "origin_count": 1,
+          "peer_count": 1,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-16T20:09:30",
+          "finished": true,
+          "id": 479826,
+          "leak_asn": 263703,
+          "leak_count": 124,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-19T18:42:04",
+          "min_ts": "2026-02-16T20:09:30",
+          "origin_count": 2,
+          "peer_count": 21,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-13T19:12:19",
+          "finished": true,
+          "id": 478864,
+          "leak_asn": 263703,
+          "leak_count": 37,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-16T17:59:29",
+          "min_ts": "2026-02-13T19:12:19",
+          "origin_count": 2,
+          "peer_count": 19,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-02-11T21:55:57",
+          "finished": true,
+          "id": 478072,
+          "leak_asn": 8048,
+          "leak_count": 1,
+          "leak_seg": [
+            6762,
+            8048,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-11T21:55:57",
+          "min_ts": "2026-02-11T21:55:57",
+          "origin_count": 1,
+          "peer_count": 1,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-02-10T20:16:10",
+          "finished": true,
+          "id": 477681,
+          "leak_asn": 270042,
+          "leak_count": 147,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-10T20:16:39",
+          "min_ts": "2026-02-10T20:16:10",
+          "origin_count": 1,
+          "peer_count": 85,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-10T14:54:45",
+          "finished": true,
+          "id": 477550,
+          "leak_asn": 263703,
+          "leak_count": 101,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-13T08:31:46",
+          "min_ts": "2026-02-10T14:54:43",
+          "origin_count": 2,
+          "peer_count": 22,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "US",
+            "BR",
+            "VE"
+          ],
+          "detected_ts": "2026-02-06T06:01:26",
+          "finished": true,
+          "id": 475896,
+          "leak_asn": 263703,
+          "leak_count": 8,
+          "leak_seg": [
+            262589,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-06T18:16:47",
+          "min_ts": "2026-02-06T06:01:26",
+          "origin_count": 1,
+          "peer_count": 4,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-05T23:28:28",
+          "finished": true,
+          "id": 475759,
+          "leak_asn": 263703,
+          "leak_count": 118,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-08T21:24:11",
+          "min_ts": "2026-02-05T23:28:28",
+          "origin_count": 2,
+          "peer_count": 27,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "VE",
+            "AR",
+            "CO"
+          ],
+          "detected_ts": "2026-02-05T06:21:48",
+          "finished": true,
+          "id": 475472,
+          "leak_asn": 11562,
+          "leak_count": 19,
+          "leak_seg": [
+            52320,
+            11562,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-06T01:36:58",
+          "min_ts": "2026-02-05T06:21:48",
+          "origin_count": 1,
+          "peer_count": 9,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-02-03T05:52:10",
+          "finished": true,
+          "id": 474705,
+          "leak_asn": 270042,
+          "leak_count": 13,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-03T05:53:10",
+          "min_ts": "2026-02-03T05:52:10",
+          "origin_count": 1,
+          "peer_count": 10,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-02-03T00:53:10",
+          "finished": true,
+          "id": 474604,
+          "leak_asn": 8053,
+          "leak_count": 6,
+          "leak_seg": [
+            394684,
+            8053,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-05T00:21:53",
+          "min_ts": "2026-02-03T00:53:10",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-02-02T18:33:20",
+          "finished": true,
+          "id": 474438,
+          "leak_asn": 263703,
+          "leak_count": 24,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-05T03:24:07",
+          "min_ts": "2026-02-02T18:33:20",
+          "origin_count": 1,
+          "peer_count": 13,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-30T22:28:17",
+          "finished": true,
+          "id": 473529,
+          "leak_asn": 270042,
+          "leak_count": 64,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-02T15:38:32",
+          "min_ts": "2026-01-30T22:28:17",
+          "origin_count": 2,
+          "peer_count": 41,
+          "prefix_count": 4
+        },
+        {
+          "countries": [
+            "VE",
+            "AR",
+            "CO"
+          ],
+          "detected_ts": "2026-01-30T19:35:29",
+          "finished": true,
+          "id": 473500,
+          "leak_asn": 11562,
+          "leak_count": 261,
+          "leak_seg": [
+            52320,
+            11562,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-01T00:48:37",
+          "min_ts": "2026-01-30T19:35:29",
+          "origin_count": 1,
+          "peer_count": 110,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-30T16:52:54",
+          "finished": true,
+          "id": 473418,
+          "leak_asn": 263703,
+          "leak_count": 54,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-02T02:53:27",
+          "min_ts": "2026-01-30T16:52:54",
+          "origin_count": 2,
+          "peer_count": 20,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "US",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-29T14:32:24",
+          "finished": true,
+          "id": 473051,
+          "leak_asn": 61461,
+          "leak_count": 3,
+          "leak_seg": [
+            3257,
+            61461,
+            6939
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-30T03:55:53",
+          "min_ts": "2026-01-29T14:32:24",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-27T20:00:13",
+          "finished": true,
+          "id": 472318,
+          "leak_asn": 270042,
+          "leak_count": 10,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-27T20:00:25",
+          "min_ts": "2026-01-27T20:00:13",
+          "origin_count": 1,
+          "peer_count": 8,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-25T07:39:00",
+          "finished": true,
+          "id": 471283,
+          "leak_asn": 270042,
+          "leak_count": 2,
+          "leak_seg": [
+            19978,
+            270042,
+            3356
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-25T07:39:00",
+          "min_ts": "2026-01-25T07:39:00",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-24T05:00:14",
+          "finished": true,
+          "id": 470946,
+          "leak_asn": 263703,
+          "leak_count": 9,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-24T20:28:43",
+          "min_ts": "2026-01-24T05:00:14",
+          "origin_count": 1,
+          "peer_count": 9,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-21T12:33:23",
+          "finished": true,
+          "id": 469904,
+          "leak_asn": 61461,
+          "leak_count": 2,
+          "leak_seg": [
+            3257,
+            61461,
+            6939
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-21T12:33:24",
+          "min_ts": "2026-01-21T12:33:23",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-21T03:33:55",
+          "finished": true,
+          "id": 469694,
+          "leak_asn": 263703,
+          "leak_count": 224,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-24T01:31:51",
+          "min_ts": "2026-01-21T03:33:55",
+          "origin_count": 1,
+          "peer_count": 56,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-01-21T00:05:42",
+          "finished": true,
+          "id": 469644,
+          "leak_asn": 8053,
+          "leak_count": 6,
+          "leak_seg": [
+            394684,
+            8053,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-23T03:00:09",
+          "min_ts": "2026-01-21T00:05:42",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-01-20T12:03:30",
+          "finished": true,
+          "id": 469191,
+          "leak_asn": 10293,
+          "leak_count": 1,
+          "leak_seg": [
+            6762,
+            10293,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-22T13:55:31",
+          "min_ts": "2026-01-22T13:55:31",
+          "origin_count": 1,
+          "peer_count": 1,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-19T14:27:34",
+          "finished": true,
+          "id": 468729,
+          "leak_asn": 270042,
+          "leak_count": 124,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-19T14:27:51",
+          "min_ts": "2026-01-19T14:27:34",
+          "origin_count": 1,
+          "peer_count": 67,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-17T19:42:55",
+          "finished": true,
+          "id": 468397,
+          "leak_asn": 263703,
+          "leak_count": 7,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-20T20:24:44",
+          "min_ts": "2026-01-17T19:42:55",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-01-16T18:19:56",
+          "finished": true,
+          "id": 468035,
+          "leak_asn": 10293,
+          "leak_count": 7,
+          "leak_seg": [
+            6762,
+            10293,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-16T18:20:20",
+          "min_ts": "2026-01-16T18:19:49",
+          "origin_count": 1,
+          "peer_count": 4,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-01-16T09:57:54",
+          "finished": true,
+          "id": 467895,
+          "leak_asn": 8053,
+          "leak_count": 5,
+          "leak_seg": [
+            394684,
+            8053,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-17T13:16:36",
+          "min_ts": "2026-01-16T09:57:54",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-15T08:39:33",
+          "finished": true,
+          "id": 467489,
+          "leak_asn": 270042,
+          "leak_count": 177,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-16T14:51:13",
+          "min_ts": "2026-01-15T08:39:33",
+          "origin_count": 2,
+          "peer_count": 51,
+          "prefix_count": 7
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-14T20:27:55",
+          "finished": true,
+          "id": 467181,
+          "leak_asn": 263703,
+          "leak_count": 60,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-16T21:31:34",
+          "min_ts": "2026-01-14T20:27:55",
+          "origin_count": 1,
+          "peer_count": 21,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "CO"
+          ],
+          "detected_ts": "2026-01-13T08:20:46",
+          "finished": true,
+          "id": 466574,
+          "leak_asn": 8048,
+          "leak_count": 4,
+          "leak_seg": [
+            6762,
+            8048,
+            52320
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-13T08:20:51",
+          "min_ts": "2026-01-13T08:20:30",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-12T13:55:16",
+          "finished": true,
+          "id": 466222,
+          "leak_asn": 270042,
+          "leak_count": 89,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-12T13:58:33",
+          "min_ts": "2026-01-12T13:55:16",
+          "origin_count": 1,
+          "peer_count": 31,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-11T19:00:34",
+          "finished": true,
+          "id": 465899,
+          "leak_asn": 263703,
+          "leak_count": 110,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-14T19:16:47",
+          "min_ts": "2026-01-11T19:00:34",
+          "origin_count": 1,
+          "peer_count": 36,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-09T10:29:16",
+          "finished": true,
+          "id": 465268,
+          "leak_asn": 270042,
+          "leak_count": 75,
+          "leak_seg": [
+            3356,
+            270042,
+            19978
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-09T16:47:14",
+          "min_ts": "2026-01-09T10:29:16",
+          "origin_count": 3,
+          "peer_count": 41,
+          "prefix_count": 3
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "US"
+          ],
+          "detected_ts": "2026-01-08T19:06:14",
+          "finished": true,
+          "id": 464812,
+          "leak_asn": 10293,
+          "leak_count": 12,
+          "leak_seg": [
+            6762,
+            10293,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-09T17:30:43",
+          "min_ts": "2026-01-08T19:06:14",
+          "origin_count": 2,
+          "peer_count": 3,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "CO",
+            "US",
+            "VE"
+          ],
+          "detected_ts": "2026-01-08T10:04:46",
+          "finished": true,
+          "id": 464640,
+          "leak_asn": 263703,
+          "leak_count": 27,
+          "leak_seg": [
+            18678,
+            263703,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-11T05:59:57",
+          "min_ts": "2026-01-08T10:04:46",
+          "origin_count": 1,
+          "peer_count": 16,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "US",
+            "AR",
+            "VE"
+          ],
+          "detected_ts": "2026-01-07T12:25:03",
+          "finished": true,
+          "id": 464288,
+          "leak_asn": 270042,
+          "leak_count": 12,
+          "leak_seg": [
+            19978,
+            270042,
+            3356
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-07T12:25:08",
+          "min_ts": "2026-01-07T12:25:03",
+          "origin_count": 1,
+          "peer_count": 3,
+          "prefix_count": 4
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "CO"
+          ],
+          "detected_ts": "2026-01-06T20:53:52",
+          "finished": true,
+          "id": 464075,
+          "leak_asn": 8048,
+          "leak_count": 40,
+          "leak_seg": [
+            52320,
+            8048,
+            6762
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-06T20:54:17",
+          "min_ts": "2026-01-06T20:53:52",
+          "origin_count": 1,
+          "peer_count": 5,
+          "prefix_count": 5
+        },
+        {
+          "countries": [
+            "VE",
+            "US",
+            "CO"
+          ],
+          "detected_ts": "2026-01-06T18:32:49",
+          "finished": true,
+          "id": 464153,
+          "leak_asn": 10293,
+          "leak_count": 80,
+          "leak_seg": [
+            52320,
+            10293,
+            23520
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-06T18:33:11",
+          "min_ts": "2026-01-06T18:32:49",
+          "origin_count": 1,
+          "peer_count": 13,
+          "prefix_count": 5
+        },
+        {
+          "countries": [
+            "IT",
+            "VE",
+            "CO"
+          ],
+          "detected_ts": "2026-01-05T15:03:24",
+          "finished": true,
+          "id": 463459,
+          "leak_asn": 8048,
+          "leak_count": 2,
+          "leak_seg": [
+            6762,
+            8048,
+            52320
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-05T15:03:24",
+          "min_ts": "2026-01-05T15:03:24",
+          "origin_count": 1,
+          "peer_count": 2,
+          "prefix_count": 1
+        }
+      ]
+    },
+    "result_info": {
+      "count": 50,
+      "total_count": 70,
+      "page": 1,
+      "per_page": 50
+    }
+  }
+}

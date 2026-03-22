@@ -1,0 +1,506 @@
+{
+  "_meta": {
+    "query_id": "cf_outages_ir",
+    "collected_at": "2026-03-11T05:45:59.287910+00:00",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "success": true,
+    "errors": [],
+    "result": {
+      "annotations": [
+        {
+          "id": "1531",
+          "dataSource": "ALL",
+          "description": "Iran Internet shutdown amid military actions",
+          "scope": null,
+          "startDate": "2026-02-28T07:00:00Z",
+          "endDate": null,
+          "locations": [
+            "IR"
+          ],
+          "asns": [],
+          "origins": [],
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://x.com/CloudflareRadar/status/2027709437981450502?s=20",
+          "asnsDetails": [],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1518",
+          "dataSource": "ALL",
+          "description": "Widespread disruption follows earlier loss of IPv6 connectivity amid protests",
+          "scope": null,
+          "startDate": "2026-01-08T16:30:00Z",
+          "endDate": "2026-02-01T00:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [],
+          "origins": [],
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://x.com/CloudflareRadar/status/2009312093749801350",
+          "asnsDetails": [],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1256",
+          "dataSource": "ALL",
+          "description": "Internet disruption in Iran following a reported DDoS attack",
+          "scope": null,
+          "startDate": "2025-07-05T21:15:00Z",
+          "endDate": "2025-07-06T00:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://x.com/CloudflareRadar/status/1941640046005617038",
+          "asnsDetails": [],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "UNKNOWN",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1231",
+          "dataSource": "ALL",
+          "description": "Internet reportedly cut off again across Iran",
+          "scope": null,
+          "startDate": "2025-06-18T12:50:00Z",
+          "endDate": "2025-06-25T05:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            58224,
+            24631,
+            13549,
+            44244,
+            57218,
+            50810,
+            43754,
+            197207
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrv55cxsb222",
+          "asnsDetails": [
+            {
+              "asn": "58224",
+              "name": "TCI",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "24631",
+              "name": "FANAPTELECOM-FCP",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "13549",
+              "name": "MERCURY",
+              "location": {
+                "code": "US",
+                "name": "United States"
+              }
+            },
+            {
+              "asn": "44244",
+              "name": "IranCell-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "57218",
+              "name": "RighTel",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "50810",
+              "name": "Mobinnet-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "43754",
+              "name": "ASIATECH",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "197207",
+              "name": "MCCI-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1228",
+          "dataSource": "ALL",
+          "description": "Internet connectivity reportedly (further) cut off in Iran",
+          "scope": null,
+          "startDate": "2025-06-17T14:00:00Z",
+          "endDate": "2025-06-17T15:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            58224
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226",
+          "asnsDetails": [
+            {
+              "asn": "58224",
+              "name": "TCI",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1230",
+          "dataSource": "ALL",
+          "description": "Internet connectivity reportedly (further) cut off in Iran",
+          "scope": null,
+          "startDate": "2025-06-17T14:00:00Z",
+          "endDate": "2025-06-18T06:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            31549,
+            205647
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226",
+          "asnsDetails": [
+            {
+              "asn": "31549",
+              "name": "RASANA",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "205647",
+              "name": "AFAGH",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1225",
+          "dataSource": "ALL",
+          "description": "Internet connectivity reportedly (further) cut off in Iran",
+          "scope": null,
+          "startDate": "2025-06-17T14:00:00Z",
+          "endDate": "2025-06-17T20:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            197207,
+            44244
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226",
+          "asnsDetails": [
+            {
+              "asn": "197207",
+              "name": "MCCI-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "44244",
+              "name": "IranCell-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1227",
+          "dataSource": "ALL",
+          "description": "Internet connectivity reportedly (further) cut off in Iran",
+          "scope": null,
+          "startDate": "2025-06-17T14:00:00Z",
+          "endDate": "2025-06-17T15:30:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            24631,
+            16322
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226",
+          "asnsDetails": [
+            {
+              "asn": "24631",
+              "name": "FANAPTELECOM-FCP",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "16322",
+              "name": "PARSONLINE",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1229",
+          "dataSource": "ALL",
+          "description": "Internet connectivity reportedly (further) cut off in Iran",
+          "scope": null,
+          "startDate": "2025-06-17T14:00:00Z",
+          "endDate": "2025-06-17T22:00:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            57218
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226",
+          "asnsDetails": [
+            {
+              "asn": "57218",
+              "name": "RighTel",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        },
+        {
+          "id": "1220",
+          "dataSource": "ALL",
+          "description": "Internet access disrupted following Israel's attack",
+          "scope": null,
+          "startDate": "2025-06-13T07:15:00Z",
+          "endDate": "2025-06-13T09:45:00Z",
+          "locations": [
+            "IR"
+          ],
+          "asns": [
+            24631,
+            205647,
+            197207,
+            58224,
+            12880,
+            31549,
+            25184
+          ],
+          "origins": null,
+          "eventType": "OUTAGE",
+          "linkedUrl": "https://x.com/CloudflareRadar/status/1933461661660184818",
+          "asnsDetails": [
+            {
+              "asn": "24631",
+              "name": "FANAPTELECOM-FCP",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "205647",
+              "name": "AFAGH",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "197207",
+              "name": "MCCI-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "58224",
+              "name": "TCI",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "12880",
+              "name": "DCI-AS",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "31549",
+              "name": "RASANA",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            },
+            {
+              "asn": "25184",
+              "name": "AFRANET",
+              "location": {
+                "code": "IR",
+                "name": "Iran"
+              }
+            }
+          ],
+          "locationsDetails": [
+            {
+              "name": "Iran",
+              "code": "IR"
+            }
+          ],
+          "originsDetails": [],
+          "outage": {
+            "outageCause": "GOVERNMENT_DIRECTED",
+            "outageType": "NATIONWIDE"
+          }
+        }
+      ]
+    }
+  }
+}

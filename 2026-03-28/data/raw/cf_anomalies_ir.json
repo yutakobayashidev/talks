@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "query_id": "cf_anomalies_ir",
+    "collected_at": "2026-03-11T05:45:59.287910+00:00",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "success": true,
+    "errors": [],
+    "result": {
+      "trafficAnomalies": [
+        {
+          "visibleInDataSources": [
+            "NET",
+            "HTTP"
+          ],
+          "uuid": "9b8da318-5260-4a1f-aea2-fe7d7e9a8023",
+          "type": "LOCATION",
+          "status": "VERIFIED",
+          "startDate": "2026-02-28T07:00:00Z",
+          "endDate": null,
+          "locationDetails": {
+            "code": "IR",
+            "name": "Iran"
+          },
+          "asnDetails": null,
+          "originDetails": null
+        },
+        {
+          "visibleInDataSources": [
+            "NET",
+            "HTTP"
+          ],
+          "uuid": "e4548b59-5a79-4fa8-97f2-fe9c6cefbc2e",
+          "type": "LOCATION",
+          "status": "UNVERIFIED",
+          "startDate": "2026-01-12T08:45:00Z",
+          "endDate": "2026-01-12T08:45:00Z",
+          "locationDetails": {
+            "code": "IR",
+            "name": "Iran"
+          },
+          "asnDetails": null,
+          "originDetails": null
+        },
+        {
+          "visibleInDataSources": [
+            "NET",
+            "HTTP"
+          ],
+          "uuid": "9fa9cb29-3f96-4428-95ab-b198c3fac40f",
+          "type": "LOCATION",
+          "status": "VERIFIED",
+          "startDate": "2026-01-08T16:30:00Z",
+          "endDate": "2026-01-08T16:30:00Z",
+          "locationDetails": {
+            "code": "IR",
+            "name": "Iran"
+          },
+          "asnDetails": null,
+          "originDetails": null
+        }
+      ]
+    }
+  }
+}

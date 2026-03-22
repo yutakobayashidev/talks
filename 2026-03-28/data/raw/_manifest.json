@@ -1,0 +1,163 @@
+{
+  "collected_at": "2026-03-11T05:45:59.287910+00:00",
+  "queries": {
+    "cf_http_ir": {
+      "url": "https://api.cloudflare.com/client/v4/radar/http/timeseries?location=IR&location=IR&dateStart=2025-12-15T00:00:00Z&dateStart=2025-09-22T00:00:00Z&dateEnd=2026-03-09T00:00:00Z&dateEnd=2025-12-15T00:00:00Z&aggInterval=1w&normalization=MIN0_MAX",
+      "params": null,
+      "description": "Iran HTTP traffic timeseries (current vs control, joint normalization)",
+      "auth_required": true
+    },
+    "cf_http_ve": {
+      "url": "https://api.cloudflare.com/client/v4/radar/http/timeseries?location=VE&location=VE&dateStart=2025-12-15T00:00:00Z&dateStart=2025-09-22T00:00:00Z&dateEnd=2026-03-09T00:00:00Z&dateEnd=2025-12-15T00:00:00Z&aggInterval=1w&normalization=MIN0_MAX",
+      "params": null,
+      "description": "Venezuela HTTP traffic timeseries (current vs control, joint normalization)",
+      "auth_required": true
+    },
+    "cf_outages_ir": {
+      "url": "https://api.cloudflare.com/client/v4/radar/annotations/outages",
+      "params": {
+        "location": "IR",
+        "dateStart": "2025-03-11T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "50"
+      },
+      "description": "Iran outages (past year: 2025-03-11 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_outages_ve": {
+      "url": "https://api.cloudflare.com/client/v4/radar/annotations/outages",
+      "params": {
+        "location": "VE",
+        "dateStart": "2025-03-11T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "50"
+      },
+      "description": "Venezuela outages (past year: 2025-03-11 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_anomalies_ir": {
+      "url": "https://api.cloudflare.com/client/v4/radar/traffic_anomalies",
+      "params": {
+        "location": "IR",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "50"
+      },
+      "description": "Iran traffic anomalies (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_anomalies_ve": {
+      "url": "https://api.cloudflare.com/client/v4/radar/traffic_anomalies",
+      "params": {
+        "location": "VE",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "50"
+      },
+      "description": "Venezuela traffic anomalies (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_bgp_leaks_ir": {
+      "url": "https://api.cloudflare.com/client/v4/radar/bgp/leaks/events",
+      "params": {
+        "involvedCountry": "IR",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "20"
+      },
+      "description": "Iran BGP leaks (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_bgp_leaks_ve": {
+      "url": "https://api.cloudflare.com/client/v4/radar/bgp/leaks/events",
+      "params": {
+        "involvedCountry": "VE",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "20"
+      },
+      "description": "Venezuela BGP leaks (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_bgp_hijacks_ir": {
+      "url": "https://api.cloudflare.com/client/v4/radar/bgp/hijacks/events",
+      "params": {
+        "involvedCountry": "IR",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "20"
+      },
+      "description": "Iran BGP hijacks (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "cf_bgp_hijacks_ve": {
+      "url": "https://api.cloudflare.com/client/v4/radar/bgp/hijacks/events",
+      "params": {
+        "involvedCountry": "VE",
+        "dateStart": "2025-12-17T00:00:00Z",
+        "dateEnd": "2026-03-11T00:00:00Z",
+        "limit": "20"
+      },
+      "description": "Venezuela BGP hijacks (12 weeks: 2025-12-17 to 2026-03-11)",
+      "auth_required": true
+    },
+    "ooni_measurements_ir": {
+      "url": "https://api.ooni.io/api/v1/measurements",
+      "params": {
+        "probe_cc": "IR",
+        "since": "2026-01-01",
+        "limit": "100"
+      },
+      "description": "Iran OONI measurements (since 2026-01-01)",
+      "auth_required": false
+    },
+    "ooni_measurements_ve": {
+      "url": "https://api.ooni.io/api/v1/measurements",
+      "params": {
+        "probe_cc": "VE",
+        "since": "2026-01-01",
+        "limit": "100"
+      },
+      "description": "Venezuela OONI measurements (since 2026-01-01)",
+      "auth_required": false
+    },
+    "ooni_aggregation_ir": {
+      "url": "https://api.ooni.io/api/v1/aggregation",
+      "params": {
+        "probe_cc": "IR",
+        "since": "2025-01-01",
+        "until": "2026-03-11",
+        "axis_x": "measurement_start_day"
+      },
+      "description": "Iran OONI daily aggregation (2025-01-01 to 2026-03-11)",
+      "auth_required": false
+    },
+    "ooni_aggregation_ve": {
+      "url": "https://api.ooni.io/api/v1/aggregation",
+      "params": {
+        "probe_cc": "VE",
+        "since": "2025-01-01",
+        "until": "2026-03-11",
+        "axis_x": "measurement_start_day"
+      },
+      "description": "Venezuela OONI daily aggregation (2025-01-01 to 2026-03-11)",
+      "auth_required": false
+    }
+  },
+  "results": {
+    "cf_http_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_http_ir.json",
+    "cf_http_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_http_ve.json",
+    "cf_outages_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_outages_ir.json",
+    "cf_outages_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_outages_ve.json",
+    "cf_anomalies_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_anomalies_ir.json",
+    "cf_anomalies_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_anomalies_ve.json",
+    "cf_bgp_leaks_ir": null,
+    "cf_bgp_leaks_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_bgp_leaks_ve.json",
+    "cf_bgp_hijacks_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_bgp_hijacks_ir.json",
+    "cf_bgp_hijacks_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/cf_bgp_hijacks_ve.json",
+    "ooni_measurements_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/ooni_measurements_ir.json",
+    "ooni_measurements_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/ooni_measurements_ve.json",
+    "ooni_aggregation_ir": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/ooni_aggregation_ir.json",
+    "ooni_aggregation_ve": "/Users/yuta/ghq/github.com/yutakobayashidev/nnn-research/data/raw/ooni_aggregation_ve.json"
+  }
+}

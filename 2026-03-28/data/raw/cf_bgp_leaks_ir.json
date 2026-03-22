@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "query_id": "cf_bgp_leaks_ir",
+    "collected_at": "2026-03-11T05:46:30Z",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "success": true,
+    "errors": [],
+    "result": {
+      "asn_info": [
+        {
+          "asn": 11967,
+          "org_name": "Hop179 LLC",
+          "country_code": "ZZ"
+        },
+        {
+          "asn": 25184,
+          "org_name": "Afranet",
+          "country_code": "IR"
+        },
+        {
+          "asn": 42337,
+          "org_name": "Respina Networks & Beyond PJSC",
+          "country_code": "IR"
+        },
+        {
+          "asn": 49581,
+          "org_name": "Ferdinand Zink trading as Tube-Hosting",
+          "country_code": "DE"
+        },
+        {
+          "asn": 49666,
+          "org_name": "Telecommunication Infrastructure Company",
+          "country_code": "IR"
+        },
+        {
+          "asn": 198154,
+          "org_name": "Pars Abr Toseeh Ertebatat Company",
+          "country_code": "IR"
+        },
+        {
+          "asn": 212895,
+          "org_name": "Johannes Ernst",
+          "country_code": "DE"
+        },
+        {
+          "asn": 215760,
+          "org_name": "Farid Sheikhzadeh Sotoubadi",
+          "country_code": "ZZ"
+        }
+      ],
+      "events": [
+        {
+          "countries": [
+            "ZZ",
+            "DE",
+            "IR"
+          ],
+          "detected_ts": "2026-02-19T21:28:22",
+          "finished": true,
+          "id": 481109,
+          "leak_asn": 215760,
+          "leak_count": 6,
+          "leak_seg": [
+            212895,
+            215760,
+            11967
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-20T18:12:17",
+          "min_ts": "2026-02-19T21:28:22",
+          "origin_count": 1,
+          "peer_count": 1,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IR",
+            "DE",
+            "IR"
+          ],
+          "detected_ts": "2026-02-13T22:27:12",
+          "finished": true,
+          "id": 478933,
+          "leak_asn": 198154,
+          "leak_count": 184,
+          "leak_seg": [
+            49581,
+            198154,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-14T10:32:22",
+          "min_ts": "2026-02-13T22:27:12",
+          "origin_count": 2,
+          "peer_count": 63,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IR",
+            "DE",
+            "IR"
+          ],
+          "detected_ts": "2026-02-09T12:51:46",
+          "finished": true,
+          "id": 477090,
+          "leak_asn": 198154,
+          "leak_count": 117,
+          "leak_seg": [
+            49581,
+            198154,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-10T09:09:53",
+          "min_ts": "2026-02-09T12:51:45",
+          "origin_count": 2,
+          "peer_count": 19,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IR",
+            "DE",
+            "IR"
+          ],
+          "detected_ts": "2026-02-05T15:57:13",
+          "finished": true,
+          "id": 475625,
+          "leak_asn": 198154,
+          "leak_count": 378,
+          "leak_seg": [
+            49581,
+            198154,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-02-07T14:10:12",
+          "min_ts": "2026-02-05T15:57:13",
+          "origin_count": 1,
+          "peer_count": 73,
+          "prefix_count": 1
+        },
+        {
+          "countries": [
+            "IR",
+            "IR",
+            "IR"
+          ],
+          "detected_ts": "2026-01-25T09:17:43",
+          "finished": true,
+          "id": 471303,
+          "leak_asn": 25184,
+          "leak_count": 666,
+          "leak_seg": [
+            49666,
+            25184,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-26T13:23:43",
+          "min_ts": "2026-01-25T09:17:43",
+          "origin_count": 1,
+          "peer_count": 109,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IR",
+            "IR",
+            "IR"
+          ],
+          "detected_ts": "2026-01-18T05:20:21",
+          "finished": true,
+          "id": 468569,
+          "leak_asn": 25184,
+          "leak_count": 1199,
+          "leak_seg": [
+            49666,
+            25184,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2026-01-18T12:30:02",
+          "min_ts": "2026-01-18T05:20:21",
+          "origin_count": 1,
+          "peer_count": 108,
+          "prefix_count": 2
+        },
+        {
+          "countries": [
+            "IR",
+            "IR",
+            "IR"
+          ],
+          "detected_ts": "2025-12-28T08:23:30",
+          "finished": true,
+          "id": 460669,
+          "leak_asn": 25184,
+          "leak_count": 1432,
+          "leak_seg": [
+            49666,
+            25184,
+            42337
+          ],
+          "leak_type": 1,
+          "max_ts": "2025-12-28T08:37:19",
+          "min_ts": "2025-12-28T08:23:29",
+          "origin_count": 4,
+          "peer_count": 109,
+          "prefix_count": 8
+        }
+      ]
+    },
+    "result_info": {
+      "count": 7,
+      "total_count": 7,
+      "page": 1,
+      "per_page": 50
+    }
+  }
+}

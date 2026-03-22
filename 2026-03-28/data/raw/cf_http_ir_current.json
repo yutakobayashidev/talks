@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "query_id": "cf_http_ir_current",
+    "collected_at": "2026-03-11T05:45:00Z",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "success": true,
+    "errors": [],
+    "result": {
+      "serie_0": {
+        "timestamps": [
+          "2025-12-15T00:00:00Z",
+          "2025-12-22T00:00:00Z",
+          "2025-12-29T00:00:00Z",
+          "2026-01-05T00:00:00Z",
+          "2026-01-12T00:00:00Z",
+          "2026-01-19T00:00:00Z",
+          "2026-01-26T00:00:00Z",
+          "2026-02-02T00:00:00Z",
+          "2026-02-09T00:00:00Z",
+          "2026-02-16T00:00:00Z",
+          "2026-02-23T00:00:00Z",
+          "2026-03-02T00:00:00Z"
+        ],
+        "values": [
+          "0.425984",
+          "0.418235",
+          "0.464108",
+          "0.36221",
+          "0.002779",
+          "0.316568",
+          "0.933441",
+          "1.0",
+          "0.724604",
+          "0.533018",
+          "0.421822",
+          "0.001724"
+        ]
+      },
+      "meta": {
+        "dateRange": [
+          {
+            "startTime": "2025-12-15T00:00:00Z",
+            "endTime": "2026-03-09T00:00:00Z"
+          }
+        ],
+        "confidenceInfo": {
+          "level": null,
+          "annotations": [
+            {
+              "dataSource": "ALL",
+              "startDate": "2026-01-08T16:30:00Z",
+              "endDate": "2026-02-01T00:00:00Z",
+              "eventType": "OUTAGE",
+              "description": "Widespread disruption follows earlier loss of IPv6 connectivity amid protests",
+              "linkedUrl": "https://x.com/CloudflareRadar/status/2009312093749801350",
+              "isInstantaneous": false
+            },
+            {
+              "dataSource": "ALL",
+              "startDate": "2026-02-28T07:00:00Z",
+              "endDate": null,
+              "eventType": "OUTAGE",
+              "description": "Iran Internet shutdown amid military actions",
+              "linkedUrl": "https://x.com/CloudflareRadar/status/2027709437981450502?s=20",
+              "isInstantaneous": false
+            }
+          ]
+        },
+        "normalization": "MIN0_MAX",
+        "aggInterval": "ONE_WEEK",
+        "lastUpdated": "2026-03-11T05:15:00Z",
+        "units": [
+          {
+            "name": "*",
+            "value": "requests"
+          }
+        ]
+      }
+    }
+  }
+}

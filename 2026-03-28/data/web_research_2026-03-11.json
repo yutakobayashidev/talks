@@ -1,0 +1,186 @@
+{
+  "snapshot_timestamp": "2026-03-11T14:30:00+09:00",
+  "description": "Web research supplement: current events, circumvention tools, historical context",
+
+  "iran_current_events": {
+    "protests": {
+      "start_date": "2025-12-28",
+      "trigger": "通貨暴落とハイパーインフレ。テヘラン大バザールの商店主ストライキから開始",
+      "scale": "全31州、180以上の都市に拡大。1979年イスラム革命以来最大規模",
+      "death_toll": {
+        "HRANA_confirmed": 7015,
+        "government_acknowledged": 3117,
+        "reported_range": "30,000-36,500 (Jan 8-9のみでTime/Guardian/Iran International報道)"
+      },
+      "arrests": "42,300人以上（未成年者多数含む）",
+      "key_dates": [
+        "2025/12/28: 抗議開始（テヘラン大バザール）",
+        "2026/01/09: 全31州180都市に拡大",
+        "2026/02/08: 司法長官が革命記念日恩赦からの除外を声明",
+        "2026/02/11: ペゼシュキアン大統領が弾圧を国民に謝罪",
+        "2026/02/21: 第2波（大学生主導）"
+      ]
+    },
+    "military_conflict": {
+      "date": "2026-02-28",
+      "operation": "Operation Epic Fury（米・イスラエル）",
+      "targets": "軍事インフラ、核施設、IRGC指揮所",
+      "result": "最高指導者ハメネイ師殺害。息子モジュタバが第3代最高指導者に就任（3月初旬）",
+      "iran_retaliation": "中東全域にミサイル・ドローンで反撃"
+    },
+    "international_response": {
+      "G7": "弾圧継続なら追加制裁",
+      "EU": "政権交代を促す制裁を検討",
+      "US_Treasury": "「我々がイランにドル不足を作り出した」（ベッセント財務長官）",
+      "diaspora_rallies": "ミュンヘン25万人、トロント35万人、LA35万人"
+    }
+  },
+
+  "venezuela_current_events": {
+    "us_intervention": {
+      "date": "2026-01-03",
+      "operation": "Operation Absolute Resolve",
+      "details": "米軍（Delta Force/CIA）がカラカスを攻撃、マドゥロ大統領と妻シリア・フローレスを拘束",
+      "arraignment": "1月5日、NYCで起訴（麻薬テロ、コカイン輸入共謀、機関銃所持）。両名無罪を主張",
+      "cuban_officers_killed": 32,
+      "interim_president": "デルシー・ロドリゲス副大統領が暫定大統領に就任"
+    },
+    "political_transition": {
+      "approval_rating": "72%が「正しい方向に進んでいる」と回答（1/30世論調査）",
+      "amnesty": "政治犯恩赦法承認（2/19）、621人釈放（3/8時点）",
+      "us_embassy": "カラカスに再開（2019年以来初）",
+      "machado_support": "67%がマリア・コリーナ・マチャドを支持"
+    },
+    "oil": {
+      "reserves": "世界最大（全体の17%、約3000億バレル）",
+      "production": "80万-110万バレル/日（ピーク時350万から低下）",
+      "us_control": "トランプが「無期限にベネズエラの石油販売を管理する」と宣言"
+    },
+    "humanitarian": {
+      "refugees": "700万人が国外脱出",
+      "humanitarian_needs": "1420万人が深刻な人道的ニーズ",
+      "poverty": "94%以上の世帯が基本的な生活必需品に不十分な収入"
+    }
+  },
+
+  "circumvention_tools_detailed": {
+    "iran": {
+      "psiphon": {
+        "peak_simultaneous": "40,000+ユーザー（1/22）",
+        "daily_connections_peak": "2600万",
+        "conduit_users_abroad": "40万人（海外イラン人が帯域共有）",
+        "total_conduit_bridges": "1100万人がPsiphon Conduitブリッジを使用",
+        "june_2025_stealth_blackout": "ピーク時150万ユーザー（通常の1/3）",
+        "black_market": "プロキシ/VPN設定が闇市場で$15/10GBで販売"
+      },
+      "tor": {
+        "obfs4_status": "2023年初頭からイランで完全にブロック（DPIによるトラフィックフィンガープリンティング）",
+        "snowflake_status": "主要な残存ブリッジ。1/22から急増、2月に正常化",
+        "webtunnel": "2022年12月配布開始。数ヶ月間有効だったが検閲当局が適応",
+        "future_plans": "Conjureの展開、WebTunnel改善、Snowflakeの強化",
+        "daily_users_baseline": "3,868人/日（直接リレー）、17,875人/日（ブリッジ経由）"
+      },
+      "vpn": {
+        "usage_rate": "若年層93%、一般国民86%がVPN使用",
+        "legal_status": "政府許可なしのVPN使用は違法",
+        "search_interest_spike": "+2000%以上",
+        "government_dpi": "高度なDPIでVPNトラフィックをスロットリング・ブロック",
+        "degradation_technique": "2026年は暗号化ネゴシエーションを妨害→VPNが認証後にサイレント失敗→ユーザーの「デジタル疲労」を誘発"
+      },
+      "starlink": {
+        "estimated_terminals": "~50,000台密輸（Freedom House推定）",
+        "disabled": "40,000台以上がKalinka妨害装置で無力化",
+        "legal_penalty": "6ヶ月〜10年の懲役刑または死刑",
+        "spacex_response": "SpaceXがイラン向けサブスクリプション料金を免除",
+        "fake_app": "イラン政府が偽Starlinkアプリを配布し回避試行者をスパイ",
+        "door_to_door": "治安部隊がブラックアウト中に戸別訪問でSatellite dish押収"
+      },
+      "kill_switch": {
+        "plan_name": "Absolute Digital Isolation",
+        "leaked_date": "2026-01-15（Filterwatchが公開）",
+        "partner": "Huawei/中国",
+        "goal": "グローバルインターネットアクセスをセキュリティクリアランス保持者のみに制限",
+        "filternet_plus": "国内イントラネット「Filternet Plus」が一般インターネットを代替"
+      },
+      "lantern": {
+        "technology": "Outline SDK / Intraテクノロジーベースのプロキシレスプロトコル",
+        "june_2025_effectiveness": "Instagram/YouTube向けに中程度の成功",
+        "jan_2026_effectiveness": "全面遮断時は限定的",
+        "funding": "OTFから2024年$394万、2025年$44.4万"
+      }
+    },
+    "venezuela": {
+      "proton_vpn": {
+        "spike": "1/3マドゥロ拘束後に12,500%のサインアップ急増（朝6-8時）",
+        "daily_increase": "770%（1日全体）"
+      },
+      "tor": {
+        "cantv_block": "2018年からCANTVでTorをブロック",
+        "bridge_failure_rate": "94%（公開ブリッジ、CANTV AS8048）",
+        "da_blocked": "70-80%のTorディレクトリ・オーソリティが常時ブロック",
+        "complete_block_success": "失敗（完全遮断には至っていない）"
+      },
+      "mesh_networks": {
+        "locha_mesh": "Bitcoin Venezuelaのオープンソース無線メッシュネットワーク。Turpialデバイスをローカルで構築可能",
+        "gotenna": "カラカスのBritish Schoolで3日間の停電時に教師間通信に使用",
+        "mycelium": "活動家設計の分散型オフグリッドメッシュ。13マイルのフィールドテスト実施"
+      },
+      "dns_blocking": {
+        "public_dns_blocked": 33,
+        "includes": ["8.8.8.8 (Google)", "1.1.1.1 (Cloudflare)"],
+        "method": "TCP/IPブロック（CANTV）",
+        "doh_status": "未確認（DNS over HTTPSは未遮断の可能性）"
+      },
+      "surveillance": {
+        "venapp": "2022年導入の市民監視アプリ（近隣住民の密告を奨励）",
+        "zte_china": "ZTE（中国）の監視技術を展開",
+        "cellebrite_israel": "Cellebrite（イスラエル）の端末フォレンジック技術",
+        "telefonica": "Telefónica/Movistarが1年間で150万件の加入者通信を傍受"
+      }
+    }
+  },
+
+  "historical_comparison": {
+    "iran_shutdown_evolution": [
+      {"year": 2019, "trigger": "燃料価格抗議", "duration": "~5日", "method": "BGP経路撤回", "scale": "ほぼ全面", "cost": "$1-1.5B"},
+      {"year": 2022, "trigger": "マフサ・アミニ抗議", "duration": "~100時間（モバイルのみ）", "method": "標的型モバイルカーフュー", "scale": "部分的"},
+      {"year": 2025, "trigger": "6月紛争", "duration": "部分的", "method": "DPI/TLSブロック改良", "scale": "部分的"},
+      {"year": "2026-01", "trigger": "全国抗議", "duration": "240時間以上", "method": "TLS/DNS干渉+Starlink妨害", "scale": "ほぼ全面+電話+衛星"},
+      {"year": "2026-03", "trigger": "米以軍事攻撃", "duration": "10日以上（継続中）", "method": "全面遮断", "scale": "1%の接続率"}
+    ],
+    "venezuela_censorship_evolution": [
+      {"year": 2010, "event": "電気通信法で行政にコンテンツ規制権限"},
+      {"year": 2014, "event": "タチラ州で50万人の接続を36時間遮断"},
+      {"year": 2019, "event": "政治危機: Twitter/Instagram/YouTube/Wikipedia遮断"},
+      {"year": 2024, "event": "選挙後: 62メディア遮断、Signal/X/Reddit遮断、2200+逮捕"},
+      {"year": 2025, "event": "VPN21件+DNS33件遮断、TikTok遮断、検閲の深化"},
+      {"year": 2026, "event": "米軍介入後のカラカス停電、Tor急増、60+ニュースサイト遮断継続"}
+    ]
+  },
+
+  "sources_from_agents": {
+    "iran_key": [
+      "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iranian_protests",
+      "https://en.wikipedia.org/wiki/2026_Internet_blackout_in_Iran",
+      "https://www.amnesty.org/en/latest/campaigns/2026/01/what-happened-at-the-protests-in-iran/",
+      "https://www.npr.org/2026/01/27/nx-s1-5689793/6-126-iran-crackdown-protests-death-toll",
+      "https://www.brookings.edu/articles/is-iran-on-the-brink-of-change/",
+      "https://www.cnbc.com/2026/03/07/irans-internet-blackout-extends-into-second-week-netblocks.html",
+      "https://redteamnews.com/threat-intelligence/irans-internet-blackout-a-technical-analysis-of-digital-isolation-and-circumvention/",
+      "https://www.meforum.org/mef-observer/how-iran-augmented-its-internet-shutdown-strategy-in-2026",
+      "https://blog.torproject.org/staying-ahead-of-censors-2025/",
+      "https://www.iranintl.com/en/202601240957",
+      "https://forum.torproject.org/t/snowflake-daily-operations-february-2026-update/21306"
+    ],
+    "venezuela_key": [
+      "https://en.wikipedia.org/wiki/2026_United_States_intervention_in_Venezuela",
+      "https://www.hrw.org/news/2026/01/07/venezuela-us-risks-rights-disaster",
+      "https://www.accessnow.org/press-release/venezuela-blocks-tor/",
+      "https://vesinfiltro.org/noticias/2025-censorship-report/",
+      "https://cyberinsider.com/venezuelans-turn-to-vpns-amid-internet-outages-following-maduros-capture/",
+      "https://securityaffairs.com/186509/intelligence/what-is-happening-to-the-internet-in-venezuela.html",
+      "https://x.com/netblocks/status/2007434366545174662",
+      "https://www.csis.org/analysis/internet-venezuelas-lifeline"
+    ]
+  }
+}

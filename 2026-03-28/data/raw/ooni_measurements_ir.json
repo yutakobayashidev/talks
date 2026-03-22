@@ -1,0 +1,2298 @@
+{
+  "_meta": {
+    "query_id": "ooni_measurements_ir",
+    "collected_at": "2026-03-11T05:45:59.287910+00:00",
+    "script": "scripts/collect.py"
+  },
+  "response": {
+    "metadata": {
+      "count": -1,
+      "current_page": 1,
+      "limit": 100,
+      "next_url": "https://api.ooni.io/api/v1/measurements?probe_cc=IR&since=2026-01-01&limit=100&offset=100",
+      "offset": 0,
+      "pages": -1,
+      "query_time": 0.17265772819519043
+    },
+    "results": [
+      {
+        "anomaly": true,
+        "confirmed": false,
+        "failure": false,
+        "input": null,
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T035728Z_httpheaderfieldmanipulation_IR_47262_n4_QbgkIOOCEhxBBWCh",
+        "scores": {
+          "blocking_general": 1.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "msg": "Malformed ctrl_headers"
+        },
+        "test_name": "http_header_field_manipulation",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311035731.201059_IR_httpheaderfieldmanipulation_169c7a171e239d58",
+        "measurement_start_time": "2026-03-11T03:57:27.000000Z",
+        "measurement_uid": "20260311035731.201059_IR_httpheaderfieldmanipulation_169c7a171e239d58"
+      },
+      {
+        "anomaly": true,
+        "confirmed": false,
+        "failure": false,
+        "input": null,
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T035723Z_httpinvalidrequestline_IR_47262_n4_9cwoODs46V5i1Jo1",
+        "scores": {
+          "blocking_general": 1.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "http_invalid_request_line",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311035728.234037_IR_httpinvalidrequestline_14314e8c7c7a5b40",
+        "measurement_start_time": "2026-03-11T03:57:22.000000Z",
+        "measurement_uid": "20260311035728.234037_IR_httpinvalidrequestline_14314e8c7c7a5b40"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.womenonwaves.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030506.528462_IR_webconnectivity_e02107ccc6933464",
+        "measurement_start_time": "2026-03-11T03:05:04.000000Z",
+        "measurement_uid": "20260311030506.528462_IR_webconnectivity_e02107ccc6933464"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.womenforwomen.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030504.674774_IR_webconnectivity_96b222747e658cbc",
+        "measurement_start_time": "2026-03-11T03:05:01.000000Z",
+        "measurement_uid": "20260311030504.674774_IR_webconnectivity_96b222747e658cbc"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.womenforafghanwomen.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030502.181977_IR_webconnectivity_21040156177e9737",
+        "measurement_start_time": "2026-03-11T03:04:57.000000Z",
+        "measurement_uid": "20260311030502.181977_IR_webconnectivity_21040156177e9737"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.womankind.org.uk/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030457.680460_IR_webconnectivity_4827262f0f313cfc",
+        "measurement_start_time": "2026-03-11T03:04:55.000000Z",
+        "measurement_uid": "20260311030457.680460_IR_webconnectivity_4827262f0f313cfc"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.wnd.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030455.487595_IR_webconnectivity_358afaf4f75e5dbb",
+        "measurement_start_time": "2026-03-11T03:04:53.000000Z",
+        "measurement_uid": "20260311030455.487595_IR_webconnectivity_358afaf4f75e5dbb"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.wluml.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030453.522775_IR_webconnectivity_b7b5b4fe6aa57465",
+        "measurement_start_time": "2026-03-11T03:04:47.000000Z",
+        "measurement_uid": "20260311030453.522775_IR_webconnectivity_b7b5b4fe6aa57465"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.witness.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030447.915672_IR_webconnectivity_aaa83f96ed4cef45",
+        "measurement_start_time": "2026-03-11T03:04:42.000000Z",
+        "measurement_uid": "20260311030447.915672_IR_webconnectivity_aaa83f96ed4cef45"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.wilpf.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030443.265397_IR_webconnectivity_3dac244b7bb83dd6",
+        "measurement_start_time": "2026-03-11T03:04:40.000000Z",
+        "measurement_uid": "20260311030443.265397_IR_webconnectivity_3dac244b7bb83dd6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.wiesenthal.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030441.136487_IR_webconnectivity_4a5728c9f7d7d287",
+        "measurement_start_time": "2026-03-11T03:04:37.000000Z",
+        "measurement_uid": "20260311030441.136487_IR_webconnectivity_4a5728c9f7d7d287"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.wftucentral.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030438.092366_IR_webconnectivity_08d357bf07ecd0f5",
+        "measurement_start_time": "2026-03-11T03:04:35.000000Z",
+        "measurement_uid": "20260311030438.092366_IR_webconnectivity_08d357bf07ecd0f5"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.wevpn.pw/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030435.700289_IR_webconnectivity_51910fb21c1c6ab6",
+        "measurement_start_time": "2026-03-11T03:04:23.000000Z",
+        "measurement_uid": "20260311030435.700289_IR_webconnectivity_51910fb21c1c6ab6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.well.com/user/queerjhd/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_r_fp_47",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            },
+            {
+              "name": "cp.fp_r_fp_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030424.001390_IR_webconnectivity_ed90a11c77b7a934",
+        "measurement_start_time": "2026-03-11T03:04:20.000000Z",
+        "measurement_uid": "20260311030424.001390_IR_webconnectivity_ed90a11c77b7a934"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.well.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_r_fp_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030421.015253_IR_webconnectivity_03810b29ab58446b",
+        "measurement_start_time": "2026-03-11T03:04:18.000000Z",
+        "measurement_uid": "20260311030421.015253_IR_webconnectivity_03810b29ab58446b"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": true,
+        "input": "https://www.we-change.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "accuracy": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030418.486192_IR_webconnectivity_d3e693b99a78bc8d",
+        "measurement_start_time": "2026-03-11T03:04:14.000000Z",
+        "measurement_uid": "20260311030418.486192_IR_webconnectivity_d3e693b99a78bc8d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.washingtontimes.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_r_fp_7",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            },
+            {
+              "name": "cp.fp_x_news",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            },
+            {
+              "name": "cp.fp_r_fp_47",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030414.716945_IR_webconnectivity_8a74fa32f71a9d06",
+        "measurement_start_time": "2026-03-11T03:04:12.000000Z",
+        "measurement_uid": "20260311030414.716945_IR_webconnectivity_8a74fa32f71a9d06"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": true,
+        "input": "https://www.washingtonpost.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "accuracy": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030412.505994_IR_webconnectivity_8029dd3282f93ea3",
+        "measurement_start_time": "2026-03-11T03:04:10.000000Z",
+        "measurement_uid": "20260311030412.505994_IR_webconnectivity_8029dd3282f93ea3"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.warchild.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030410.776146_IR_webconnectivity_935ab0a1e9bcfca6",
+        "measurement_start_time": "2026-03-11T03:04:08.000000Z",
+        "measurement_uid": "20260311030410.776146_IR_webconnectivity_935ab0a1e9bcfca6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.vpnunlimited.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030408.836215_IR_webconnectivity_6f2f32eb40954cce",
+        "measurement_start_time": "2026-03-11T03:04:06.000000Z",
+        "measurement_uid": "20260311030408.836215_IR_webconnectivity_6f2f32eb40954cce"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.vpngate.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030406.550844_IR_webconnectivity_7e0863bf117697ab",
+        "measurement_start_time": "2026-03-11T03:03:56.000000Z",
+        "measurement_uid": "20260311030406.550844_IR_webconnectivity_7e0863bf117697ab"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.voisfarsi.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030357.035649_IR_webconnectivity_0276029338fa5f4c",
+        "measurement_start_time": "2026-03-11T03:03:44.000000Z",
+        "measurement_uid": "20260311030357.035649_IR_webconnectivity_0276029338fa5f4c"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.voanews.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.f_gen_access_denied",
+              "scope": "vbw",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030345.437491_IR_webconnectivity_c0f4f4782da2b6a7",
+        "measurement_start_time": "2026-03-11T03:03:43.000000Z",
+        "measurement_uid": "20260311030345.437491_IR_webconnectivity_c0f4f4782da2b6a7"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.vidc.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030343.678052_IR_webconnectivity_b8de96b51ca30d8d",
+        "measurement_start_time": "2026-03-11T03:03:40.000000Z",
+        "measurement_uid": "20260311030343.678052_IR_webconnectivity_b8de96b51ca30d8d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.vice.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030341.117572_IR_webconnectivity_ff76a38716cb7988",
+        "measurement_start_time": "2026-03-11T03:03:37.000000Z",
+        "measurement_uid": "20260311030341.117572_IR_webconnectivity_ff76a38716cb7988"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.vesti.ru/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030338.313274_IR_webconnectivity_7f3728da1dd3ed9c",
+        "measurement_start_time": "2026-03-11T03:03:36.000000Z",
+        "measurement_uid": "20260311030338.313274_IR_webconnectivity_7f3728da1dd3ed9c"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.usatoday.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030336.934604_IR_webconnectivity_90cd4f9bff5acf94",
+        "measurement_start_time": "2026-03-11T03:03:33.000000Z",
+        "measurement_uid": "20260311030336.934604_IR_webconnectivity_90cd4f9bff5acf94"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.urduvoa.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.f_gen_access_denied",
+              "scope": "vbw",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030334.055563_IR_webconnectivity_44daa0d504e42930",
+        "measurement_start_time": "2026-03-11T03:03:31.000000Z",
+        "measurement_uid": "20260311030334.055563_IR_webconnectivity_44daa0d504e42930"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.uproxy.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030331.834842_IR_webconnectivity_a1a167eb84c72f0e",
+        "measurement_start_time": "2026-03-11T03:03:29.000000Z",
+        "measurement_uid": "20260311030331.834842_IR_webconnectivity_a1a167eb84c72f0e"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.unicef.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_cloudflare_error_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030329.712627_IR_webconnectivity_7e5ba8171bfacd17",
+        "measurement_start_time": "2026-03-11T03:03:27.000000Z",
+        "measurement_uid": "20260311030329.712627_IR_webconnectivity_7e5ba8171bfacd17"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.unhcr.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030328.044123_IR_webconnectivity_d4bca86a9c84b8f3",
+        "measurement_start_time": "2026-03-11T03:03:25.000000Z",
+        "measurement_uid": "20260311030328.044123_IR_webconnectivity_d4bca86a9c84b8f3"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.unfpa.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030326.438587_IR_webconnectivity_4a59aa3ec3988f7a",
+        "measurement_start_time": "2026-03-11T03:03:23.000000Z",
+        "measurement_uid": "20260311030326.438587_IR_webconnectivity_4a59aa3ec3988f7a"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.unfe.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030324.327881_IR_webconnectivity_13bbf515624715ac",
+        "measurement_start_time": "2026-03-11T03:03:22.000000Z",
+        "measurement_uid": "20260311030324.327881_IR_webconnectivity_13bbf515624715ac"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.ultimate-anonymity.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030322.859372_IR_webconnectivity_3726a816d8d2368d",
+        "measurement_start_time": "2026-03-11T03:03:20.000000Z",
+        "measurement_uid": "20260311030322.859372_IR_webconnectivity_3726a816d8d2368d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.u4.no/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030320.955901_IR_webconnectivity_ab24577a77a977ac",
+        "measurement_start_time": "2026-03-11T03:03:14.000000Z",
+        "measurement_uid": "20260311030320.955901_IR_webconnectivity_ab24577a77a977ac"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.tvc.ru/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030315.449436_IR_webconnectivity_2bb4e586e8d2fe7d",
+        "measurement_start_time": "2026-03-11T03:03:13.000000Z",
+        "measurement_uid": "20260311030315.449436_IR_webconnectivity_2bb4e586e8d2fe7d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.tunnelbear.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030314.170071_IR_webconnectivity_1d71da32974aed48",
+        "measurement_start_time": "2026-03-11T03:03:12.000000Z",
+        "measurement_uid": "20260311030314.170071_IR_webconnectivity_1d71da32974aed48"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.tribunezamaneh.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030312.583764_IR_webconnectivity_d214bd6df5f5f44c",
+        "measurement_start_time": "2026-03-11T03:03:09.000000Z",
+        "measurement_uid": "20260311030312.583764_IR_webconnectivity_d214bd6df5f5f44c"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.transparency.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_r_fp_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030310.396287_IR_webconnectivity_1844ca7ede62b098",
+        "measurement_start_time": "2026-03-11T03:03:07.000000Z",
+        "measurement_uid": "20260311030310.396287_IR_webconnectivity_1844ca7ede62b098"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.transgendermap.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030308.320273_IR_webconnectivity_1be5d63d99097855",
+        "measurement_start_time": "2026-03-11T03:03:04.000000Z",
+        "measurement_uid": "20260311030308.320273_IR_webconnectivity_1be5d63d99097855"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.towleroad.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_r_fp_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030305.126319_IR_webconnectivity_d52cc72c464cafa0",
+        "measurement_start_time": "2026-03-11T03:03:01.000000Z",
+        "measurement_uid": "20260311030305.126319_IR_webconnectivity_d52cc72c464cafa0"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.toufan.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030302.277144_IR_webconnectivity_d40bdedae06291d6",
+        "measurement_start_time": "2026-03-11T03:03:00.000000Z",
+        "measurement_uid": "20260311030302.277144_IR_webconnectivity_d40bdedae06291d6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.torproject.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030300.925526_IR_webconnectivity_a43dfd008c5f9df8",
+        "measurement_start_time": "2026-03-11T03:02:55.000000Z",
+        "measurement_uid": "20260311030300.925526_IR_webconnectivity_a43dfd008c5f9df8"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.thetrevorproject.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030255.543023_IR_webconnectivity_01dc763a7a6a4360",
+        "measurement_start_time": "2026-03-11T03:02:51.000000Z",
+        "measurement_uid": "20260311030255.543023_IR_webconnectivity_01dc763a7a6a4360"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.theregister.co.uk/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030251.899526_IR_webconnectivity_e1e38d7328d81f85",
+        "measurement_start_time": "2026-03-11T03:02:49.000000Z",
+        "measurement_uid": "20260311030251.899526_IR_webconnectivity_e1e38d7328d81f85"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.theguardian.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030250.105137_IR_webconnectivity_11d14f701cb4b134",
+        "measurement_start_time": "2026-03-11T03:02:47.000000Z",
+        "measurement_uid": "20260311030250.105137_IR_webconnectivity_11d14f701cb4b134"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.theepochtimes.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_news",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            },
+            {
+              "name": "cp.fp_r_fp_1",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030247.715072_IR_webconnectivity_547a3e41ff54b5ba",
+        "measurement_start_time": "2026-03-11T03:02:44.000000Z",
+        "measurement_uid": "20260311030247.715072_IR_webconnectivity_547a3e41ff54b5ba"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.theatlantic.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030244.864234_IR_webconnectivity_41b6ec1d4daeee16",
+        "measurement_start_time": "2026-03-11T03:02:42.000000Z",
+        "measurement_uid": "20260311030244.864234_IR_webconnectivity_41b6ec1d4daeee16"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.terredeshommes.nl/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030242.749961_IR_webconnectivity_a843966cea1fd5c1",
+        "measurement_start_time": "2026-03-11T03:02:40.000000Z",
+        "measurement_uid": "20260311030242.749961_IR_webconnectivity_a843966cea1fd5c1"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.telegraph.co.uk/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.f_gen_access_denied",
+              "scope": "vbw",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030240.836489_IR_webconnectivity_0756f659b71a1db6",
+        "measurement_start_time": "2026-03-11T03:02:38.000000Z",
+        "measurement_uid": "20260311030240.836489_IR_webconnectivity_0756f659b71a1db6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.techlore.tech/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_invalid_url",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030239.102313_IR_webconnectivity_382bf4d08d404f7b",
+        "measurement_start_time": "2026-03-11T03:02:36.000000Z",
+        "measurement_uid": "20260311030239.102313_IR_webconnectivity_382bf4d08d404f7b"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.teafund.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030236.704476_IR_webconnectivity_ca17c07a1fe14e9b",
+        "measurement_start_time": "2026-03-11T03:02:33.000000Z",
+        "measurement_uid": "20260311030236.704476_IR_webconnectivity_ca17c07a1fe14e9b"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.taghato.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030234.118785_IR_webconnectivity_f766107b030671e5",
+        "measurement_start_time": "2026-03-11T03:02:31.000000Z",
+        "measurement_uid": "20260311030234.118785_IR_webconnectivity_f766107b030671e5"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.surfeasy.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030232.079923_IR_webconnectivity_45d4a35259021861",
+        "measurement_start_time": "2026-03-11T03:02:29.000000Z",
+        "measurement_uid": "20260311030232.079923_IR_webconnectivity_45d4a35259021861"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.stupidcensorship.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030230.058366_IR_webconnectivity_03a1f02a5b2fba73",
+        "measurement_start_time": "2026-03-11T03:02:11.000000Z",
+        "measurement_uid": "20260311030230.058366_IR_webconnectivity_03a1f02a5b2fba73"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.stopstreetharassment.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030211.706881_IR_webconnectivity_fa40eed555e8eeb5",
+        "measurement_start_time": "2026-03-11T03:02:07.000000Z",
+        "measurement_uid": "20260311030211.706881_IR_webconnectivity_fa40eed555e8eeb5"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.stonewall.org.uk/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030208.053789_IR_webconnectivity_b57f8a1b614169b6",
+        "measurement_start_time": "2026-03-11T03:02:04.000000Z",
+        "measurement_uid": "20260311030208.053789_IR_webconnectivity_b57f8a1b614169b6"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.starlink.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030204.697005_IR_webconnectivity_2d1a2dc500ad9c65",
+        "measurement_start_time": "2026-03-11T03:02:00.000000Z",
+        "measurement_uid": "20260311030204.697005_IR_webconnectivity_2d1a2dc500ad9c65"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.spiegel.de/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030201.202464_IR_webconnectivity_90f62b6a1fe0d81f",
+        "measurement_start_time": "2026-03-11T03:01:58.000000Z",
+        "measurement_uid": "20260311030201.202464_IR_webconnectivity_90f62b6a1fe0d81f"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.sobhiran.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030158.580462_IR_webconnectivity_b9909ef8a0aef8e5",
+        "measurement_start_time": "2026-03-11T03:01:46.000000Z",
+        "measurement_uid": "20260311030158.580462_IR_webconnectivity_b9909ef8a0aef8e5"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.siasate-kargari.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030146.950729_IR_webconnectivity_7850877c5c0c1fe2",
+        "measurement_start_time": "2026-03-11T03:01:34.000000Z",
+        "measurement_uid": "20260311030146.950729_IR_webconnectivity_7850877c5c0c1fe2"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": true,
+        "input": "https://www.shomalnews.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "accuracy": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030135.302625_IR_webconnectivity_8183b4422dfe8409",
+        "measurement_start_time": "2026-03-11T03:00:59.000000Z",
+        "measurement_uid": "20260311030135.302625_IR_webconnectivity_8183b4422dfe8409"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.shoe.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030059.746825_IR_webconnectivity_8284d380eb7141e9",
+        "measurement_start_time": "2026-03-11T03:00:56.000000Z",
+        "measurement_uid": "20260311030059.746825_IR_webconnectivity_8284d380eb7141e9"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.securityinabox.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030056.966027_IR_webconnectivity_513591d685a73c7e",
+        "measurement_start_time": "2026-03-11T03:00:53.000000Z",
+        "measurement_uid": "20260311030056.966027_IR_webconnectivity_513591d685a73c7e"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": true,
+        "input": "https://www.secfirst.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "accuracy": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030054.355679_IR_webconnectivity_031b96058b82ebce",
+        "measurement_start_time": "2026-03-11T03:00:52.000000Z",
+        "measurement_uid": "20260311030054.355679_IR_webconnectivity_031b96058b82ebce"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.scruff.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030052.803144_IR_webconnectivity_343cb8721b981737",
+        "measurement_start_time": "2026-03-11T03:00:50.000000Z",
+        "measurement_uid": "20260311030052.803144_IR_webconnectivity_343cb8721b981737"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.scmp.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030051.303675_IR_webconnectivity_03f950a62ec06f6d",
+        "measurement_start_time": "2026-03-11T03:00:47.000000Z",
+        "measurement_uid": "20260311030051.303675_IR_webconnectivity_03f950a62ec06f6d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.sbs.com.au/language/coronavirus?cid=infocus",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030047.730471_IR_webconnectivity_fc04b2c8cf3575b5",
+        "measurement_start_time": "2026-03-11T03:00:42.000000Z",
+        "measurement_uid": "20260311030047.730471_IR_webconnectivity_fc04b2c8cf3575b5"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.sazegara.net/persian/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030043.233045_IR_webconnectivity_f214e9429181318e",
+        "measurement_start_time": "2026-03-11T03:00:37.000000Z",
+        "measurement_uid": "20260311030043.233045_IR_webconnectivity_f214e9429181318e"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.savethechildren.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030038.272686_IR_webconnectivity_35adb35b21693a69",
+        "measurement_start_time": "2026-03-11T03:00:35.000000Z",
+        "measurement_uid": "20260311030038.272686_IR_webconnectivity_35adb35b21693a69"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.samesexmarriage.ca/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030035.933405_IR_webconnectivity_d8d828d43f0b73ca",
+        "measurement_start_time": "2026-03-11T03:00:33.000000Z",
+        "measurement_uid": "20260311030035.933405_IR_webconnectivity_d8d828d43f0b73ca"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.samaa.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030034.243596_IR_webconnectivity_d18ea16ae5330ceb",
+        "measurement_start_time": "2026-03-11T03:00:32.000000Z",
+        "measurement_uid": "20260311030034.243596_IR_webconnectivity_d18ea16ae5330ceb"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.sahamnews.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030032.615153_IR_webconnectivity_70a3d4de6d9c6781",
+        "measurement_start_time": "2026-03-11T03:00:27.000000Z",
+        "measurement_uid": "20260311030032.615153_IR_webconnectivity_70a3d4de6d9c6781"
+      },
+      {
+        "anomaly": true,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.sadacom.news/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 1.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "analysis": {
+            "blocking_type": "http-failure"
+          }
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030028.201550_IR_webconnectivity_b4220dd8c0769abe",
+        "measurement_start_time": "2026-03-11T03:00:23.000000Z",
+        "measurement_uid": "20260311030028.201550_IR_webconnectivity_b4220dd8c0769abe"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rtarabic.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030024.415087_IR_webconnectivity_af7761bfbdac7e61",
+        "measurement_start_time": "2026-03-11T03:00:20.000000Z",
+        "measurement_uid": "20260311030024.415087_IR_webconnectivity_af7761bfbdac7e61"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rt.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_news",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030021.121298_IR_webconnectivity_9f0e77c0d1f11763",
+        "measurement_start_time": "2026-03-11T03:00:12.000000Z",
+        "measurement_uid": "20260311030021.121298_IR_webconnectivity_9f0e77c0d1f11763"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.roozonline.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030012.352176_IR_webconnectivity_662b9f6ba46ab3d8",
+        "measurement_start_time": "2026-03-11T03:00:03.000000Z",
+        "measurement_uid": "20260311030012.352176_IR_webconnectivity_662b9f6ba46ab3d8"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.roohsavar.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030003.807408_IR_webconnectivity_d3f4b7e6edc2841b",
+        "measurement_start_time": "2026-03-11T03:00:00.000000Z",
+        "measurement_uid": "20260311030003.807408_IR_webconnectivity_d3f4b7e6edc2841b"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.righttodie.ca/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311030001.178444_IR_webconnectivity_f60416a5d7b6ea82",
+        "measurement_start_time": "2026-03-11T02:59:56.000000Z",
+        "measurement_uid": "20260311030001.178444_IR_webconnectivity_f60416a5d7b6ea82"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rfi.fr/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_satellite_fp_403",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025957.266146_IR_webconnectivity_5a8c87d45617e4d7",
+        "measurement_start_time": "2026-03-11T02:59:55.000000Z",
+        "measurement_uid": "20260311025957.266146_IR_webconnectivity_5a8c87d45617e4d7"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rferl.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_news",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025955.747676_IR_webconnectivity_32ffb7f9b503d54a",
+        "measurement_start_time": "2026-03-11T02:59:53.000000Z",
+        "measurement_uid": "20260311025955.747676_IR_webconnectivity_32ffb7f9b503d54a"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rfa.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025953.573247_IR_webconnectivity_a8c4d884923f051c",
+        "measurement_start_time": "2026-03-11T02:59:50.000000Z",
+        "measurement_uid": "20260311025953.573247_IR_webconnectivity_a8c4d884923f051c"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rezapahlavi.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_page_not_found",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025950.922726_IR_webconnectivity_b762f80797749551",
+        "measurement_start_time": "2026-03-11T02:59:47.000000Z",
+        "measurement_uid": "20260311025950.922726_IR_webconnectivity_b762f80797749551"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.reuters.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025947.876611_IR_webconnectivity_0d96ddec8579995b",
+        "measurement_start_time": "2026-03-11T02:59:45.000000Z",
+        "measurement_uid": "20260311025947.876611_IR_webconnectivity_0d96ddec8579995b"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rescue.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025945.764215_IR_webconnectivity_e2abf975c689fb86",
+        "measurement_start_time": "2026-03-11T02:59:43.000000Z",
+        "measurement_uid": "20260311025945.764215_IR_webconnectivity_e2abf975c689fb86"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.repubblica.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025943.619797_IR_webconnectivity_224dc3690741c880",
+        "measurement_start_time": "2026-03-11T02:59:40.000000Z",
+        "measurement_uid": "20260311025943.619797_IR_webconnectivity_224dc3690741c880"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.reprolegalhelpline.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025941.251332_IR_webconnectivity_418347ff57bcce5f",
+        "measurement_start_time": "2026-03-11T02:59:37.000000Z",
+        "measurement_uid": "20260311025941.251332_IR_webconnectivity_418347ff57bcce5f"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.refugeesinternational.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025938.296225_IR_webconnectivity_e89f0336b86d86cd",
+        "measurement_start_time": "2026-03-11T02:59:35.000000Z",
+        "measurement_uid": "20260311025938.296225_IR_webconnectivity_e89f0336b86d86cd"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.redstateaccess.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025936.058565_IR_webconnectivity_8ee869142a543a44",
+        "measurement_start_time": "2026-03-11T02:59:33.000000Z",
+        "measurement_uid": "20260311025936.058565_IR_webconnectivity_8ee869142a543a44"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rawa.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025934.164268_IR_webconnectivity_43364e0e44d42b8f",
+        "measurement_start_time": "2026-03-11T02:59:30.000000Z",
+        "measurement_uid": "20260311025934.164268_IR_webconnectivity_43364e0e44d42b8f"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rambler.ru/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025931.051953_IR_webconnectivity_44814b020ed2b358",
+        "measurement_start_time": "2026-03-11T02:59:29.000000Z",
+        "measurement_uid": "20260311025931.051953_IR_webconnectivity_44814b020ed2b358"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": true,
+        "input": "http://www.rahesabz.net/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "accuracy": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025929.641800_IR_webconnectivity_f91735b37063478a",
+        "measurement_start_time": "2026-03-11T02:59:17.000000Z",
+        "measurement_uid": "20260311025929.641800_IR_webconnectivity_f91735b37063478a"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.rahavardjournal.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025918.038513_IR_webconnectivity_f7aa968773b80e0d",
+        "measurement_start_time": "2026-03-11T02:59:15.000000Z",
+        "measurement_uid": "20260311025918.038513_IR_webconnectivity_f7aa968773b80e0d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.rahavard.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025916.067907_IR_webconnectivity_b5af0e12f8b248e4",
+        "measurement_start_time": "2026-03-11T02:59:12.000000Z",
+        "measurement_uid": "20260311025916.067907_IR_webconnectivity_b5af0e12f8b248e4"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.radiozamaneh.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025913.040062_IR_webconnectivity_6a8ac46c68357ce3",
+        "measurement_start_time": "2026-03-11T02:59:09.000000Z",
+        "measurement_uid": "20260311025913.040062_IR_webconnectivity_6a8ac46c68357ce3"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.radiohamrah.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025910.116963_IR_webconnectivity_7213bb0562ba7d99",
+        "measurement_start_time": "2026-03-11T02:59:04.000000Z",
+        "measurement_uid": "20260311025910.116963_IR_webconnectivity_7213bb0562ba7d99"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "http://www.radicalparty.org/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025904.948221_IR_webconnectivity_ba383db01cc72d8d",
+        "measurement_start_time": "2026-03-11T02:59:01.000000Z",
+        "measurement_uid": "20260311025904.948221_IR_webconnectivity_ba383db01cc72d8d"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.queerty.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025902.404971_IR_webconnectivity_dbae8f6f55d0f9a8",
+        "measurement_start_time": "2026-03-11T02:58:59.000000Z",
+        "measurement_uid": "20260311025902.404971_IR_webconnectivity_dbae8f6f55d0f9a8"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.youtube.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0,
+          "fingerprints": [
+            {
+              "name": "cp.fp_x_youtube",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            },
+            {
+              "name": "cp.fp_x_redirect_just",
+              "scope": "fp",
+              "location_found": "body",
+              "confidence_no_fp": 5,
+              "expected_countries": []
+            }
+          ]
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025900.338808_IR_webconnectivity_c1d3cd9fcd5bd890",
+        "measurement_start_time": "2026-03-11T02:58:57.000000Z",
+        "measurement_uid": "20260311025900.338808_IR_webconnectivity_c1d3cd9fcd5bd890"
+      },
+      {
+        "anomaly": false,
+        "confirmed": false,
+        "failure": false,
+        "input": "https://www.instagram.com/",
+        "probe_asn": "AS47262",
+        "probe_cc": "IR",
+        "report_id": "20260311T025849Z_webconnectivity_IR_47262_n4_A7tPj8pBH1Z0sjHo",
+        "scores": {
+          "blocking_general": 0.0,
+          "blocking_global": 0.0,
+          "blocking_country": 0.0,
+          "blocking_isp": 0.0,
+          "blocking_local": 0.0
+        },
+        "test_name": "web_connectivity",
+        "measurement_url": "https://api.ooni.io/api/v1/raw_measurement?measurement_uid=20260311025857.893561_IR_webconnectivity_c5393b102dea10c8",
+        "measurement_start_time": "2026-03-11T02:58:55.000000Z",
+        "measurement_uid": "20260311025857.893561_IR_webconnectivity_c5393b102dea10c8"
+      }
+    ]
+  }
+}

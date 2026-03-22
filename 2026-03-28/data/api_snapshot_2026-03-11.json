@@ -1,0 +1,692 @@
+{
+  "_meta": {
+    "description": "API再現可能なデータのみ。全ての値は data/raw/ の生レスポンスから導出可能",
+    "collected_at": "2026-03-11T05:00:00Z",
+    "reproducibility": "python scripts/collect.py && python scripts/collect.py --build",
+    "sources": {
+      "cloudflare_radar": {
+        "base_url": "https://api.cloudflare.com/client/v4/radar",
+        "auth": "Bearer token (Account > Radar > Read)",
+        "license": "CC BY-NC 4.0"
+      },
+      "ooni": {
+        "base_url": "https://api.ooni.io/api/v1",
+        "auth": "none"
+      },
+      "tor_metrics": {
+        "base_url": "https://metrics.torproject.org",
+        "auth": "none",
+        "status": "ECONNREFUSED on 2026-03-11 — endpoints defined but data not collected"
+      }
+    }
+  },
+  "cloudflare_radar": {
+    "iran": {
+      "http_traffic_timeseries": {
+        "_raw": "data/raw/cf_http_ir.json",
+        "_query_id": "cf_http_ir",
+        "_verified": true,
+        "current_period": {
+          "range": "2025-12-15 to 2026-03-09",
+          "timestamps": [
+            "2025-12-15",
+            "2025-12-22",
+            "2025-12-29",
+            "2026-01-05",
+            "2026-01-12",
+            "2026-01-19",
+            "2026-01-26",
+            "2026-02-02",
+            "2026-02-09",
+            "2026-02-16",
+            "2026-02-23",
+            "2026-03-02"
+          ],
+          "values": [
+            0.425984,
+            0.418235,
+            0.464108,
+            0.36221,
+            0.002779,
+            0.316568,
+            0.933441,
+            1.0,
+            0.724604,
+            0.533018,
+            0.421822,
+            0.001724
+          ],
+          "normalization": "MIN0_MAX"
+        },
+        "control_period": {
+          "range": "2025-09-22 to 2025-12-15",
+          "timestamps": [
+            "2025-09-22",
+            "2025-09-29",
+            "2025-10-06",
+            "2025-10-13",
+            "2025-10-20",
+            "2025-10-27",
+            "2025-11-03",
+            "2025-11-10",
+            "2025-11-17",
+            "2025-11-24",
+            "2025-12-01",
+            "2025-12-08"
+          ],
+          "values": [
+            0.253914,
+            0.267769,
+            0.251946,
+            0.25924,
+            0.275227,
+            0.308072,
+            0.338444,
+            0.33676,
+            0.328338,
+            0.369035,
+            0.391022,
+            0.407885
+          ]
+        },
+        "annotations": [
+          {
+            "startDate": "2026-01-08T16:30:00Z",
+            "endDate": "2026-02-01T00:00:00Z",
+            "eventType": "OUTAGE",
+            "description": "Widespread disruption follows earlier loss of IPv6 connectivity amid protests"
+          },
+          {
+            "startDate": "2026-02-28T07:00:00Z",
+            "endDate": null,
+            "eventType": "OUTAGE",
+            "description": "Iran Internet shutdown amid military actions"
+          }
+        ]
+      },
+      "outages_past_year": {
+        "_raw": "data/raw/cf_outages_ir.json",
+        "_query_id": "cf_outages_ir",
+        "_verified": true,
+        "total_events": 10,
+        "all_government_directed": false,
+        "all_nationwide": true,
+        "events": [
+          {
+            "id": "1531",
+            "startDate": "2026-02-28T07:00:00Z",
+            "endDate": null,
+            "description": "Iran Internet shutdown amid military actions"
+          },
+          {
+            "id": "1518",
+            "startDate": "2026-01-08T16:30:00Z",
+            "endDate": "2026-02-01T00:00:00Z",
+            "description": "Widespread disruption follows earlier loss of IPv6 connectivity amid protests"
+          },
+          {
+            "id": "1256",
+            "startDate": "2025-07-05T21:15:00Z",
+            "endDate": "2025-07-06T00:00:00Z",
+            "description": "Internet disruption in Iran following a reported DDoS attack",
+            "cause": "UNKNOWN"
+          },
+          {
+            "id": "1231",
+            "startDate": "2025-06-18T12:50:00Z",
+            "endDate": "2025-06-25T05:00:00Z",
+            "description": "Internet reportedly cut off again across Iran"
+          },
+          {
+            "id": "1228",
+            "startDate": "2025-06-17T14:00:00Z",
+            "endDate": "2025-06-17T15:00:00Z",
+            "description": "Internet connectivity reportedly (further) cut off in Iran"
+          },
+          {
+            "id": "1230",
+            "startDate": "2025-06-17T14:00:00Z",
+            "endDate": "2025-06-18T06:00:00Z",
+            "description": "Internet connectivity reportedly (further) cut off in Iran"
+          },
+          {
+            "id": "1225",
+            "startDate": "2025-06-17T14:00:00Z",
+            "endDate": "2025-06-17T20:00:00Z",
+            "description": "Internet connectivity reportedly (further) cut off in Iran"
+          },
+          {
+            "id": "1227",
+            "startDate": "2025-06-17T14:00:00Z",
+            "endDate": "2025-06-17T15:30:00Z",
+            "description": "Internet connectivity reportedly (further) cut off in Iran"
+          },
+          {
+            "id": "1229",
+            "startDate": "2025-06-17T14:00:00Z",
+            "endDate": "2025-06-17T22:00:00Z",
+            "description": "Internet connectivity reportedly (further) cut off in Iran"
+          },
+          {
+            "id": "1220",
+            "startDate": "2025-06-13T07:15:00Z",
+            "endDate": "2025-06-13T09:45:00Z",
+            "description": "Internet access disrupted following Israel's attack"
+          }
+        ]
+      },
+      "traffic_anomalies_12w": {
+        "_raw": "data/raw/cf_anomalies_ir.json",
+        "_query_id": "cf_anomalies_ir",
+        "_verified": true,
+        "events": [
+          {
+            "startDate": "2026-02-28T07:00:00Z",
+            "endDate": null,
+            "status": "VERIFIED"
+          },
+          {
+            "startDate": "2026-01-12T08:45:00Z",
+            "endDate": "2026-01-12T08:45:00Z",
+            "status": "UNVERIFIED"
+          },
+          {
+            "startDate": "2026-01-08T16:30:00Z",
+            "endDate": "2026-01-08T16:30:00Z",
+            "status": "VERIFIED"
+          }
+        ]
+      },
+      "bgp_leaks_12w": {
+        "_raw": "data/raw/cf_bgp_leaks_ir.json",
+        "_query_id": "cf_bgp_leaks_ir",
+        "_verified": true,
+        "total_events": 7,
+        "events": [
+          {
+            "id": 481109,
+            "date": "2026-02-19",
+            "leak_asn": 215760,
+            "leak_count": 6
+          },
+          {
+            "id": 478933,
+            "date": "2026-02-13",
+            "leak_asn": 198154,
+            "leak_count": 184
+          },
+          {
+            "id": 477090,
+            "date": "2026-02-09",
+            "leak_asn": 198154,
+            "leak_count": 117
+          },
+          {
+            "id": 475625,
+            "date": "2026-02-05",
+            "leak_asn": 198154,
+            "leak_count": 378
+          },
+          {
+            "id": 471303,
+            "date": "2026-01-25",
+            "leak_asn": 25184,
+            "leak_count": 666
+          },
+          {
+            "id": 468569,
+            "date": "2026-01-18",
+            "leak_asn": 25184,
+            "leak_count": 1199
+          },
+          {
+            "id": 460669,
+            "date": "2025-12-28",
+            "leak_asn": 25184,
+            "leak_count": 1432
+          }
+        ]
+      },
+      "bgp_hijacks_12w": {
+        "_raw": "data/raw/cf_bgp_hijacks_ir.json",
+        "_query_id": "cf_bgp_hijacks_ir",
+        "_verified": true,
+        "total_events_in_snapshot": 50,
+        "total_events_in_api": 90
+      }
+    },
+    "venezuela": {
+      "http_traffic_timeseries": {
+        "_raw": "data/raw/cf_http_ve.json",
+        "_query_id": "cf_http_ve",
+        "_verified": true,
+        "current_period": {
+          "range": "2025-12-15 to 2026-03-09",
+          "timestamps": [
+            "2025-12-15",
+            "2025-12-22",
+            "2025-12-29",
+            "2026-01-05",
+            "2026-01-12",
+            "2026-01-19",
+            "2026-01-26",
+            "2026-02-02",
+            "2026-02-09",
+            "2026-02-16",
+            "2026-02-23",
+            "2026-03-02"
+          ],
+          "values": [
+            0.904357,
+            0.832653,
+            0.832975,
+            0.9699,
+            0.99041,
+            0.963592,
+            0.979243,
+            0.978804,
+            0.95031,
+            0.975934,
+            0.99208,
+            1.0
+          ],
+          "normalization": "MIN0_MAX"
+        },
+        "control_period": {
+          "range": "2025-09-22 to 2025-12-15",
+          "timestamps": [
+            "2025-09-22",
+            "2025-09-29",
+            "2025-10-06",
+            "2025-10-13",
+            "2025-10-20",
+            "2025-10-27",
+            "2025-11-03",
+            "2025-11-10",
+            "2025-11-17",
+            "2025-11-24",
+            "2025-12-01",
+            "2025-12-08"
+          ],
+          "values": [
+            0.862141,
+            0.857513,
+            0.847702,
+            0.880872,
+            0.908105,
+            0.897492,
+            0.939187,
+            0.906494,
+            0.896457,
+            0.929695,
+            0.887878,
+            0.875197
+          ]
+        }
+      },
+      "outages_past_year": {
+        "_raw": "data/raw/cf_outages_ve.json",
+        "_query_id": "cf_outages_ve",
+        "_verified": true,
+        "total_events": 0
+      },
+      "traffic_anomalies_12w": {
+        "_raw": "data/raw/cf_anomalies_ve.json",
+        "_query_id": "cf_anomalies_ve",
+        "_verified": true,
+        "total_events": 0
+      },
+      "bgp_leaks_12w": {
+        "_raw": "data/raw/cf_bgp_leaks_ve.json",
+        "_query_id": "cf_bgp_leaks_ve",
+        "_verified": true,
+        "total_events_in_snapshot": 50,
+        "total_events_in_api": 70,
+        "events": [
+          {
+            "id": 486565,
+            "date": "2026-03-06",
+            "leak_asn": 270042,
+            "leak_count": 90
+          },
+          {
+            "id": 486341,
+            "date": "2026-03-05",
+            "leak_asn": 8053,
+            "leak_count": 2
+          },
+          {
+            "id": 485816,
+            "date": "2026-03-04",
+            "leak_asn": 8048,
+            "leak_count": 3
+          },
+          {
+            "id": 485814,
+            "date": "2026-03-04",
+            "leak_asn": 10293,
+            "leak_count": 3
+          },
+          {
+            "id": 484589,
+            "date": "2026-03-01",
+            "leak_asn": 270042,
+            "leak_count": 146
+          },
+          {
+            "id": 483667,
+            "date": "2026-02-26",
+            "leak_asn": 263703,
+            "leak_count": 783
+          },
+          {
+            "id": 483265,
+            "date": "2026-02-25",
+            "leak_asn": 270042,
+            "leak_count": 52
+          },
+          {
+            "id": 482555,
+            "date": "2026-02-24",
+            "leak_asn": 8053,
+            "leak_count": 20
+          },
+          {
+            "id": 482442,
+            "date": "2026-02-24",
+            "leak_asn": 272102,
+            "leak_count": 4
+          },
+          {
+            "id": 482268,
+            "date": "2026-02-23",
+            "leak_asn": 263703,
+            "leak_count": 195
+          },
+          {
+            "id": 481334,
+            "date": "2026-02-20",
+            "leak_asn": 263703,
+            "leak_count": 42
+          },
+          {
+            "id": 481069,
+            "date": "2026-02-19",
+            "leak_asn": 263703,
+            "leak_count": 1
+          },
+          {
+            "id": 479826,
+            "date": "2026-02-16",
+            "leak_asn": 263703,
+            "leak_count": 124
+          },
+          {
+            "id": 478864,
+            "date": "2026-02-13",
+            "leak_asn": 263703,
+            "leak_count": 37
+          },
+          {
+            "id": 478072,
+            "date": "2026-02-11",
+            "leak_asn": 8048,
+            "leak_count": 1
+          },
+          {
+            "id": 477681,
+            "date": "2026-02-10",
+            "leak_asn": 270042,
+            "leak_count": 147
+          },
+          {
+            "id": 477550,
+            "date": "2026-02-10",
+            "leak_asn": 263703,
+            "leak_count": 101
+          },
+          {
+            "id": 475896,
+            "date": "2026-02-06",
+            "leak_asn": 263703,
+            "leak_count": 8
+          },
+          {
+            "id": 475759,
+            "date": "2026-02-05",
+            "leak_asn": 263703,
+            "leak_count": 118
+          },
+          {
+            "id": 475472,
+            "date": "2026-02-05",
+            "leak_asn": 11562,
+            "leak_count": 19
+          },
+          {
+            "id": 474705,
+            "date": "2026-02-03",
+            "leak_asn": 270042,
+            "leak_count": 13
+          },
+          {
+            "id": 474604,
+            "date": "2026-02-03",
+            "leak_asn": 8053,
+            "leak_count": 6
+          },
+          {
+            "id": 474438,
+            "date": "2026-02-02",
+            "leak_asn": 263703,
+            "leak_count": 24
+          },
+          {
+            "id": 473529,
+            "date": "2026-01-30",
+            "leak_asn": 270042,
+            "leak_count": 64
+          },
+          {
+            "id": 473500,
+            "date": "2026-01-30",
+            "leak_asn": 11562,
+            "leak_count": 261
+          },
+          {
+            "id": 473418,
+            "date": "2026-01-30",
+            "leak_asn": 263703,
+            "leak_count": 54
+          },
+          {
+            "id": 473051,
+            "date": "2026-01-29",
+            "leak_asn": 61461,
+            "leak_count": 3
+          },
+          {
+            "id": 472318,
+            "date": "2026-01-27",
+            "leak_asn": 270042,
+            "leak_count": 10
+          },
+          {
+            "id": 471283,
+            "date": "2026-01-25",
+            "leak_asn": 270042,
+            "leak_count": 2
+          },
+          {
+            "id": 470946,
+            "date": "2026-01-24",
+            "leak_asn": 263703,
+            "leak_count": 9
+          },
+          {
+            "id": 469904,
+            "date": "2026-01-21",
+            "leak_asn": 61461,
+            "leak_count": 2
+          },
+          {
+            "id": 469694,
+            "date": "2026-01-21",
+            "leak_asn": 263703,
+            "leak_count": 224
+          },
+          {
+            "id": 469644,
+            "date": "2026-01-21",
+            "leak_asn": 8053,
+            "leak_count": 6
+          },
+          {
+            "id": 469191,
+            "date": "2026-01-20",
+            "leak_asn": 10293,
+            "leak_count": 1
+          },
+          {
+            "id": 468729,
+            "date": "2026-01-19",
+            "leak_asn": 270042,
+            "leak_count": 124
+          },
+          {
+            "id": 468397,
+            "date": "2026-01-17",
+            "leak_asn": 263703,
+            "leak_count": 7
+          },
+          {
+            "id": 468035,
+            "date": "2026-01-16",
+            "leak_asn": 10293,
+            "leak_count": 7
+          },
+          {
+            "id": 467895,
+            "date": "2026-01-16",
+            "leak_asn": 8053,
+            "leak_count": 5
+          },
+          {
+            "id": 467489,
+            "date": "2026-01-15",
+            "leak_asn": 270042,
+            "leak_count": 177
+          },
+          {
+            "id": 467181,
+            "date": "2026-01-14",
+            "leak_asn": 263703,
+            "leak_count": 60
+          },
+          {
+            "id": 466574,
+            "date": "2026-01-13",
+            "leak_asn": 8048,
+            "leak_count": 4
+          },
+          {
+            "id": 466222,
+            "date": "2026-01-12",
+            "leak_asn": 270042,
+            "leak_count": 89
+          },
+          {
+            "id": 465899,
+            "date": "2026-01-11",
+            "leak_asn": 263703,
+            "leak_count": 110
+          },
+          {
+            "id": 465268,
+            "date": "2026-01-09",
+            "leak_asn": 270042,
+            "leak_count": 75
+          },
+          {
+            "id": 464812,
+            "date": "2026-01-08",
+            "leak_asn": 10293,
+            "leak_count": 12
+          },
+          {
+            "id": 464640,
+            "date": "2026-01-08",
+            "leak_asn": 263703,
+            "leak_count": 27
+          },
+          {
+            "id": 464288,
+            "date": "2026-01-07",
+            "leak_asn": 270042,
+            "leak_count": 12
+          },
+          {
+            "id": 464075,
+            "date": "2026-01-06",
+            "leak_asn": 8048,
+            "leak_count": 40
+          },
+          {
+            "id": 464153,
+            "date": "2026-01-06",
+            "leak_asn": 10293,
+            "leak_count": 80
+          },
+          {
+            "id": 463459,
+            "date": "2026-01-05",
+            "leak_asn": 8048,
+            "leak_count": 2
+          }
+        ]
+      },
+      "bgp_hijacks_12w": {
+        "_raw": "data/raw/cf_bgp_hijacks_ve.json",
+        "_query_id": "cf_bgp_hijacks_ve",
+        "_verified": true,
+        "total_events": 45
+      }
+    }
+  },
+  "ooni": {
+    "iran": {
+      "measurements": {
+        "_raw": "data/raw/ooni_measurements_ir.json",
+        "_query_id": "ooni_measurements_ir",
+        "_extracted_by": "scripts/collect.py --extract"
+      },
+      "aggregation": {
+        "_raw": "data/raw/ooni_aggregation_ir.json",
+        "_query_id": "ooni_aggregation_ir",
+        "_extracted_by": "scripts/collect.py --extract"
+      }
+    },
+    "venezuela": {
+      "measurements": {
+        "_raw": "data/raw/ooni_measurements_ve.json",
+        "_query_id": "ooni_measurements_ve",
+        "_extracted_by": "scripts/collect.py --extract"
+      },
+      "aggregation": {
+        "_raw": "data/raw/ooni_aggregation_ve.json",
+        "_query_id": "ooni_aggregation_ve",
+        "_extracted_by": "scripts/collect.py --extract"
+      }
+    }
+  },
+  "tor_metrics": {
+    "_status": "NOT_COLLECTED",
+    "_reason": "metrics.torproject.org returned ECONNREFUSED on 2026-03-11",
+    "_endpoints": {
+      "tor_relay_users_ir": "https://metrics.torproject.org/userstats-relay-country.csv?start=2025-01-01&end=2026-03-11&country=ir&events=off",
+      "tor_relay_users_ve": "https://metrics.torproject.org/userstats-relay-country.csv?start=2025-01-01&end=2026-03-11&country=ve&events=off",
+      "tor_bridge_users_ir": "https://metrics.torproject.org/userstats-bridge-country.csv?start=2025-01-01&end=2026-03-11&country=ir&events=off",
+      "tor_bridge_users_ve": "https://metrics.torproject.org/userstats-bridge-country.csv?start=2025-01-01&end=2026-03-11&country=ve&events=off"
+    }
+  }
+}
