@@ -53,6 +53,14 @@
           - *OONI (Open Observatory of Network Interference)* — ボランティア端末による接続測定データ
 
           Pythonでデータ取得プログラムを作成し、再現可能な分析パイプラインとして実装した。回避技術の利用状況や法制度など、APIでは得られない情報については報道・人権団体の報告も併用した。
+
+          #v(4mm)
+          #image("assets/fig5_ooni_summary.png", width: 100%)
+          #v(1mm)
+          #text(
+            size: 18pt,
+            fill: rgb("#555555"),
+          )[#text(weight: "bold", fill: accent)[図1:] OONI web\_connectivityによるカテゴリ別遮断状況（2025/01–2026/03）。イランは広範なカテゴリに遮断が及ぶのに対し、ベネズエラはVPN・回避ツールに集中。]
         ],
       )
 
@@ -69,7 +77,7 @@
           #text(
             size: 18pt,
             fill: rgb("#555555"),
-          )[#text(weight: "bold", fill: accent)[図1:] Cloudflare Radarによるイランの正規化トラフィック（MIN\_MAX）推移。赤帯は遮断期間。]
+          )[#text(weight: "bold", fill: accent)[図2:] Cloudflare Radarによるイランの正規化トラフィック（MIN\_MAX）推移。赤帯は遮断期間。]
           #v(4mm)
 
           障害記録は過去1年間で10件、全てが全国規模である。OONIの測定数も2026年1月9日に前日の*9,846件からわずか4件*に急落し、端末自体が接続不能になったことを示す。BGPハイジャックは12週間で90件に達している。
@@ -84,14 +92,6 @@
           ベネズエラの正規化トラフィックは0.83〜1.0で安定し、障害イベントは0件である。インターネット自体は止まっていない。しかし国営事業者CANTVが*152以上のサイトを遮断*し、33のDNSサーバーをブロック、検閲回避ツールのサイト自体も遮断対象となっている。
 
           イランが「電源を切る」アプローチなのに対し、ベネズエラは「特定の情報だけ見えなくする」アプローチである。
-
-          #v(4mm)
-          #image("assets/fig3_comparison.png", width: 100%)
-          #v(1mm)
-          #text(
-            size: 18pt,
-            fill: rgb("#555555"),
-          )[#text(weight: "bold", fill: accent)[図2:] イラン（物理遮断中心）とベネズエラ（コンテンツ遮断中心）の検閲手法比較。棒の長さはイベント数または遮断対象数。]
         ],
       )
     ],

@@ -68,7 +68,7 @@ QUERIES = [
         "description": "Iran HTTP traffic timeseries (current vs control, joint normalization)",
         "url": (f"{CF_BASE}/http/timeseries"
                 "?location=IR&location=IR"
-                "&dateStart=2025-12-15T00:00:00Z&dateStart=2025-09-22T00:00:00Z"
+                "&dateStart=2025-12-08T00:00:00Z&dateStart=2025-09-15T00:00:00Z"
                 "&dateEnd=2026-03-09T00:00:00Z&dateEnd=2025-12-15T00:00:00Z"
                 "&aggInterval=1w&normalization=MIN0_MAX"),
         "params": None,  # params already in URL (array params can't use urlencode)
@@ -513,6 +513,70 @@ def extract_all():
     print(f"\nSaved: {out_path}")
 
 
+def collect_ooni_categories():
+    """OONI APIからカテゴリ別遮断データを取得して保存する。
+
+    Citizen Lab URL category codes を使い、国ごと・カテゴリごとの
+    confirmed + anomaly 件数を集計。結果を1つのJSONにまとめる。
+    ref: https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-category_codes.csv
+    """
+    import time
+
+    CATEGORIES = [
+        "NEWS", "HUMR", "POLR", "LGBT", "COMM", "COMT", "ANON",
+        "MMED", "SRCH", "CULTR", "FILE", "HOST", "GAME", "PORN",
+        "DATE", "PROV", "HACK", "MILX", "HATE", "REL", "GRP",
+        "PUBH", "ECON", "ENV", "MISC",
+    ]
+    COUNTRIES = [("IR", "Iran"), ("VE", "Venezuela")]
+
+    print("=== Collecting OONI category breakdown ===\n")
+    results = {}
+
+    for cc, label in COUNTRIES:
+        print(f"[{label}]")
+        country_data = {}
+        for cat in CATEGORIES:
+            params = urllib.parse.urlencode({
+                "probe_cc": cc,
+                "since": "2025-01-01",
+                "until": "2026-03-11",
+                "test_name": "web_connectivity",
+                "category_code": cat,
+            })
+            url = f"{OONI_BASE}/aggregation?{params}"
+            try:
+                req = urllib.request.urlopen(url, timeout=30)
+                data = json.loads(req.read())
+                r = data.get("result", {})
+                country_data[cat] = {
+                    "confirmed_count": r.get("confirmed_count", 0),
+                    "anomaly_count": r.get("anomaly_count", 0),
+                    "measurement_count": r.get("measurement_count", 0),
+                }
+                blocked = r.get("confirmed_count", 0) + r.get("anomaly_count", 0)
+                print(f"  {cat:6s} blocked={blocked:>8,}")
+                time.sleep(0.3)
+            except Exception as e:
+                print(f"  {cat:6s} ERROR: {e}")
+                country_data[cat] = {"confirmed_count": 0, "anomaly_count": 0, "measurement_count": 0}
+        results[cc.lower()] = country_data
+
+    out_path = RAW_DIR / "ooni_category_breakdown.json"
+    with open(out_path, "w") as f:
+        json.dump({
+            "_meta": {
+                "description": "OONI web_connectivity category breakdown (confirmed + anomaly)",
+                "query_params": {"since": "2025-01-01", "until": "2026-03-11", "test_name": "web_connectivity"},
+                "collected_at": datetime.now(timezone.utc).isoformat(),
+                "source": "https://api.ooni.io/api/v1/aggregation",
+                "category_codes_ref": "https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-category_codes.csv",
+            },
+            **results,
+        }, f, indent=2, ensure_ascii=False)
+    print(f"\nSaved: {out_path}")
+
+
 # ============================================================
 # Build: raw → api_snapshot
 # ============================================================
@@ -945,7 +1009,12 @@ if __name__ == "__main__":
     parser.add_argument("--build", action="store_true", help="Build api_snapshot from raw data")
     parser.add_argument("--extract", action="store_true", help="Extract structured data from raw OONI/Tor responses")
     parser.add_argument("--ooni-only", action="store_true", help="Only fetch OONI data (no Cloudflare token needed)")
+    parser.add_argument("--categories", action="store_true", help="Fetch OONI category breakdown data")
     args = parser.parse_args()
+
+    if args.categories:
+        collect_ooni_categories()
+        sys.exit(0)
 
     if args.build:
         build()

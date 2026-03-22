@@ -186,7 +186,12 @@ def plot_iran_traffic(data: dict):
     ax.grid(True, alpha=0.3)
     ax.set_facecolor('#fafafa')
 
-    # Stats box (web_research fallback)
+    # Stats box
+    # $35.7M/日: イラン通信相 Sattar Hashemi (2026/1/28)
+    #   https://iranwire.com/en/news/148305-357-million-a-day-the-hidden-cost-of-irans-internet-blackout/
+    #   NetBlocks独自推計は$37M/日
+    # 80%減: Postex CEO Babak Aghili-Nasab がDigiatoに証言 (2026/1)
+    #   https://www.iranintl.com/en/202601295582
     textstr = '2026年に2度の大規模遮断\n第1次(1/8〜1/28) 第2次(2/28〜)\n経済損失: $35.7M/日\nオンライン売上: 80%減'
     props = dict(boxstyle='round', facecolor='#fff3cd', alpha=0.9, edgecolor='#ffc107')
     ax.text(0.98, 0.98, textstr, transform=ax.transAxes, fontsize=9,
@@ -454,73 +459,66 @@ def _aggregate_ooni_monthly(raw: dict) -> tuple:
     return labels, measurements, anomalies
 
 
+def _load_ooni_categories():
+    """raw/ooni_category_breakdown.json からカテゴリ別遮断データを読み込む"""
+    path = ROOT / "data" / "raw" / "ooni_category_breakdown.json"
+    if not path.exists():
+        return None
+    with open(path) as f:
+        return json.load(f)
+
+
+def _build_pie_data(cat_data: dict, top_n: int = 6):
+    """カテゴリ別データから上位N件+その他の円グラフデータを作成"""
+    CAT_LABELS = {
+        "NEWS": "ニュース\nメディア", "HUMR": "人権団体", "POLR": "政治サイト",
+        "LGBT": "LGBTQ+", "COMM": "SNS・\nメッセージ", "COMT": "通信ツール",
+        "ANON": "VPN・\n回避ツール", "MMED": "動画・音楽", "SRCH": "検索エンジン",
+        "CULTR": "文化", "FILE": "ファイル共有", "HOST": "ホスティング",
+        "GAME": "ゲーム", "PORN": "ポルノ", "DATE": "出会い系",
+        "PROV": "プロバイダ", "HACK": "ハッキング", "MILX": "軍事",
+        "HATE": "ヘイト", "REL": "宗教", "GRP": "ソーシャル",
+        "PUBH": "公衆衛生", "ECON": "経済", "ENV": "環境", "MISC": "その他",
+    }
+    items = []
+    for code, vals in cat_data.items():
+        if code.startswith("_"):
+            continue
+        blocked = vals.get("confirmed_count", 0) + vals.get("anomaly_count", 0)
+        label = CAT_LABELS.get(code, code)
+        items.append((label, blocked))
+    items.sort(key=lambda x: x[1], reverse=True)
+    top = items[:top_n]
+    other = sum(v for _, v in items[top_n:])
+    labels = [l for l, _ in top] + ["その他"]
+    values = [v for _, v in top] + [other]
+    return labels, values
+
+
 def plot_ooni_summary(data: dict):
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 10))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
-    ooni_agg = data.get("ooni_agg", {})
+    colors_pie = ['#e53935', '#fb8c00', '#43a047', '#1e88e5', '#8e24aa', '#00897b', '#757575']
 
-    # Iran OONI
-    if "ir" in ooni_agg:
-        ir_labels, ir_measurements, ir_anomalies = _aggregate_ooni_monthly(ooni_agg["ir"])
-    else:
-        # Fallback
-        ir_labels = ['2025/01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
-                     '2026/01', '02', '03']
-        ir_measurements = [10000, 11000, 12000, 11500, 10500, 2000, 9000, 10000, 11000,
-                           12000, 13000, 14000, 500, 20000, 1000]
-        ir_anomalies = [2000, 2100, 2200, 2000, 1800, 1500, 2000, 2200, 2300,
-                        2500, 2500, 2800, 200, 5500, 300]
+    cat_data = _load_ooni_categories()
+    if cat_data is None:
+        print("  [SKIP] ooni_category_breakdown.json not found. Run: python scripts/collect.py --categories")
+        plt.close()
+        return
 
-    x = np.arange(len(ir_labels))
-    ax1.bar(x, ir_measurements, color='#42A5F5', alpha=0.7, label='測定数')
-    ax1.bar(x, ir_anomalies, color='#EF5350', alpha=0.8, label='異常検知数')
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(ir_labels, rotation=45, ha='right', fontsize=8)
-    ax1.set_title('イラン：OONI測定数の推移', fontsize=12, fontweight='bold')
-    ax1.legend(fontsize=9)
-    ax1.set_ylabel('月間測定数', fontsize=10)
-    ax1.set_facecolor('#fafafa')
-
-    # Venezuela OONI
-    if "ve" in ooni_agg:
-        ve_labels, ve_measurements, ve_anomalies = _aggregate_ooni_monthly(ooni_agg["ve"])
-    else:
-        ve_labels = ['2025/01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12',
-                     '2026/01', '02', '03']
-        ve_measurements = [67000, 70000, 80000, 196000, 160000, 140000, 120000, 100000,
-                           95000, 90000, 85000, 80000, 75000, 70000, 65000]
-        ve_anomalies = [8800, 15000, 35000, 39000, 30000, 25000, 22000, 20000,
-                        18000, 17000, 15000, 12000, 10000, 9000, 8500]
-
-    x2 = np.arange(len(ve_labels))
-    ax2.bar(x2, ve_measurements, color='#42A5F5', alpha=0.7, label='測定数')
-    ax2.bar(x2, ve_anomalies, color='#EF5350', alpha=0.8, label='異常検知数')
-    ax2.set_xticks(x2)
-    ax2.set_xticklabels(ve_labels, rotation=45, ha='right', fontsize=8)
-    ax2.set_title('ベネズエラ：OONI測定数の推移', fontsize=12, fontweight='bold')
-    ax2.legend(fontsize=9)
-    ax2.set_ylabel('月間測定数', fontsize=10)
-    ax2.set_facecolor('#fafafa')
-
-    # Pie charts (web_research — fallback constants)
-    ir_categories = ['SNS・\nメッセージ', 'ニュース\nメディア', '人権\n団体', 'VPN・\n回避ツール',
-                     'LGBTQ+\nサイト', 'その他']
-    ir_blocked = [15, 25, 8, 12, 10, 30]
-    colors_pie = ['#e53935', '#fb8c00', '#43a047', '#1e88e5', '#8e24aa', '#757575']
-
-    ax3.pie(ir_blocked, labels=ir_categories, colors=colors_pie, autopct='%1.0f%%',
+    ir_labels, ir_values = _build_pie_data(cat_data["ir"])
+    ax1.pie(ir_values, labels=ir_labels, colors=colors_pie, autopct='%1.0f%%',
             startangle=90, textprops={'fontsize': 9})
-    ax3.set_title('イラン：遮断対象の種類別内訳\n（OONI測定より推定）', fontsize=12, fontweight='bold')
+    ax1.set_title('イラン：遮断対象の種類別内訳\n（OONI web_connectivity, 2025/01–2026/03）',
+                  fontsize=11, fontweight='bold')
 
-    ve_categories = ['独立系\nメディア', 'SNS\nプラットフォーム', 'VPN\nサービス', 'DNS\nサーバー',
-                     '政治\nサイト', 'その他']
-    ve_blocked_pie = [61, 5, 21, 33, 15, 17]
-
-    ax4.pie(ve_blocked_pie, labels=ve_categories, colors=colors_pie, autopct='%1.0f%%',
+    ve_labels, ve_values = _build_pie_data(cat_data["ve"])
+    ax2.pie(ve_values, labels=ve_labels, colors=colors_pie, autopct='%1.0f%%',
             startangle=90, textprops={'fontsize': 9})
-    ax4.set_title('ベネズエラ：遮断対象の種類別内訳\n（VeSinFiltro / OONI）', fontsize=12, fontweight='bold')
+    ax2.set_title('ベネズエラ：遮断対象の種類別内訳\n（OONI web_connectivity, 2025/01–2026/03）',
+                  fontsize=11, fontweight='bold')
 
-    plt.suptitle('OONI (Open Observatory of Network Interference) データ分析',
+    plt.suptitle('OONI カテゴリ別遮断状況',
                  fontsize=14, fontweight='bold', y=1.02)
     plt.tight_layout()
     plt.savefig(OUTPUT_DIR / 'fig5_ooni_summary.png', dpi=200, bbox_inches='tight')

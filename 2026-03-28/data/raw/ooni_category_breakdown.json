@@ -1,0 +1,267 @@
+{
+  "_meta": {
+    "description": "OONI web_connectivity category breakdown (confirmed + anomaly)",
+    "query_params": {
+      "since": "2025-01-01",
+      "until": "2026-03-11",
+      "test_name": "web_connectivity"
+    },
+    "collected_at": "2026-03-22T02:03:31.794566+00:00",
+    "source": "https://api.ooni.io/api/v1/aggregation",
+    "category_codes_ref": "https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-category_codes.csv"
+  },
+  "ir": {
+    "NEWS": {
+      "confirmed_count": 136187,
+      "anomaly_count": 62331,
+      "measurement_count": 524878
+    },
+    "HUMR": {
+      "confirmed_count": 129334,
+      "anomaly_count": 58941,
+      "measurement_count": 475438
+    },
+    "POLR": {
+      "confirmed_count": 51271,
+      "anomaly_count": 30235,
+      "measurement_count": 152885
+    },
+    "LGBT": {
+      "confirmed_count": 48247,
+      "anomaly_count": 32440,
+      "measurement_count": 163234
+    },
+    "COMM": {
+      "confirmed_count": 4170,
+      "anomaly_count": 2352,
+      "measurement_count": 39027
+    },
+    "COMT": {
+      "confirmed_count": 39149,
+      "anomaly_count": 32120,
+      "measurement_count": 230721
+    },
+    "ANON": {
+      "confirmed_count": 118737,
+      "anomaly_count": 41495,
+      "measurement_count": 301186
+    },
+    "MMED": {
+      "confirmed_count": 110824,
+      "anomaly_count": 25004,
+      "measurement_count": 198762
+    },
+    "SRCH": {
+      "confirmed_count": 4387,
+      "anomaly_count": 10209,
+      "measurement_count": 64244
+    },
+    "CULTR": {
+      "confirmed_count": 47783,
+      "anomaly_count": 19623,
+      "measurement_count": 172788
+    },
+    "FILE": {
+      "confirmed_count": 10071,
+      "anomaly_count": 9815,
+      "measurement_count": 90625
+    },
+    "HOST": {
+      "confirmed_count": 33212,
+      "anomaly_count": 31544,
+      "measurement_count": 223550
+    },
+    "GAME": {
+      "confirmed_count": 3417,
+      "anomaly_count": 4856,
+      "measurement_count": 46608
+    },
+    "PORN": {
+      "confirmed_count": 20792,
+      "anomaly_count": 9457,
+      "measurement_count": 38159
+    },
+    "DATE": {
+      "confirmed_count": 9851,
+      "anomaly_count": 5899,
+      "measurement_count": 25213
+    },
+    "PROV": {
+      "confirmed_count": 9210,
+      "anomaly_count": 5224,
+      "measurement_count": 20293
+    },
+    "HACK": {
+      "confirmed_count": 4857,
+      "anomaly_count": 4214,
+      "measurement_count": 55001
+    },
+    "MILX": {
+      "confirmed_count": 4386,
+      "anomaly_count": 2408,
+      "measurement_count": 11611
+    },
+    "HATE": {
+      "confirmed_count": 2770,
+      "anomaly_count": 1452,
+      "measurement_count": 9166
+    },
+    "REL": {
+      "confirmed_count": 36590,
+      "anomaly_count": 24383,
+      "measurement_count": 132249
+    },
+    "GRP": {
+      "confirmed_count": 206093,
+      "anomaly_count": 54845,
+      "measurement_count": 420816
+    },
+    "PUBH": {
+      "confirmed_count": 3665,
+      "anomaly_count": 9908,
+      "measurement_count": 73167
+    },
+    "ECON": {
+      "confirmed_count": 3545,
+      "anomaly_count": 4977,
+      "measurement_count": 64065
+    },
+    "ENV": {
+      "confirmed_count": 3030,
+      "anomaly_count": 5561,
+      "measurement_count": 68307
+    },
+    "MISC": {
+      "confirmed_count": 485,
+      "anomaly_count": 128,
+      "measurement_count": 4164
+    }
+  },
+  "ve": {
+    "NEWS": {
+      "confirmed_count": 283,
+      "anomaly_count": 422553,
+      "measurement_count": 3795536
+    },
+    "HUMR": {
+      "confirmed_count": 1,
+      "anomaly_count": 87335,
+      "measurement_count": 2005268
+    },
+    "POLR": {
+      "confirmed_count": 0,
+      "anomaly_count": 75296,
+      "measurement_count": 563463
+    },
+    "LGBT": {
+      "confirmed_count": 0,
+      "anomaly_count": 10465,
+      "measurement_count": 538033
+    },
+    "COMM": {
+      "confirmed_count": 127,
+      "anomaly_count": 35390,
+      "measurement_count": 395526
+    },
+    "COMT": {
+      "confirmed_count": 1,
+      "anomaly_count": 189887,
+      "measurement_count": 1553352
+    },
+    "ANON": {
+      "confirmed_count": 0,
+      "anomaly_count": 2317438,
+      "measurement_count": 4727007
+    },
+    "MMED": {
+      "confirmed_count": 0,
+      "anomaly_count": 33386,
+      "measurement_count": 944929
+    },
+    "SRCH": {
+      "confirmed_count": 0,
+      "anomaly_count": 12233,
+      "measurement_count": 243963
+    },
+    "CULTR": {
+      "confirmed_count": 0,
+      "anomaly_count": 18331,
+      "measurement_count": 744947
+    },
+    "FILE": {
+      "confirmed_count": 2,
+      "anomaly_count": 39878,
+      "measurement_count": 837723
+    },
+    "HOST": {
+      "confirmed_count": 0,
+      "anomaly_count": 210641,
+      "measurement_count": 3368535
+    },
+    "GAME": {
+      "confirmed_count": 0,
+      "anomaly_count": 3309,
+      "measurement_count": 350055
+    },
+    "PORN": {
+      "confirmed_count": 0,
+      "anomaly_count": 29956,
+      "measurement_count": 179885
+    },
+    "DATE": {
+      "confirmed_count": 0,
+      "anomaly_count": 7847,
+      "measurement_count": 152383
+    },
+    "PROV": {
+      "confirmed_count": 0,
+      "anomaly_count": 637,
+      "measurement_count": 101058
+    },
+    "HACK": {
+      "confirmed_count": 0,
+      "anomaly_count": 107610,
+      "measurement_count": 431341
+    },
+    "MILX": {
+      "confirmed_count": 0,
+      "anomaly_count": 614,
+      "measurement_count": 35468
+    },
+    "HATE": {
+      "confirmed_count": 0,
+      "anomaly_count": 3186,
+      "measurement_count": 54640
+    },
+    "REL": {
+      "confirmed_count": 0,
+      "anomaly_count": 17111,
+      "measurement_count": 464092
+    },
+    "GRP": {
+      "confirmed_count": 0,
+      "anomaly_count": 632161,
+      "measurement_count": 1918243
+    },
+    "PUBH": {
+      "confirmed_count": 137,
+      "anomaly_count": 17495,
+      "measurement_count": 414420
+    },
+    "ECON": {
+      "confirmed_count": 0,
+      "anomaly_count": 21490,
+      "measurement_count": 298089
+    },
+    "ENV": {
+      "confirmed_count": 0,
+      "anomaly_count": 6434,
+      "measurement_count": 418639
+    },
+    "MISC": {
+      "confirmed_count": 0,
+      "anomaly_count": 365,
+      "measurement_count": 50420
+    }
+  }
+}
