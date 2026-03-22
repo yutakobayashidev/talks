@@ -33,7 +33,7 @@ else:
     plt.rcParams['font.family'] = ['Hiragino Sans', 'Hiragino Kaku Gothic Pro', 'sans-serif']
 plt.rcParams['axes.unicode_minus'] = False
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = ROOT / 'assets'
 OUTPUT_DIR.mkdir(exist_ok=True)
 
