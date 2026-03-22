@@ -5,12 +5,6 @@
 
 #let divider() = line(length: 100%, stroke: 0.8pt + border)
 
-#let heading-prefix(level) = if level == 1 {
-  [#sym.hash]
-} else {
-  [#sym.hash#sym.hash]
-}
-
 #let section(title, body, level: 1) = block(
   width: 100%,
   inset: (x: 4mm, y: 4mm),
@@ -19,7 +13,7 @@
     size: if level == 1 { 32pt } else { 26pt },
     weight: "bold",
   )[
-    #heading-prefix(level) #h(1.2mm) #title
+    #title
   ]
   #v(if level == 1 { 3mm } else { 2.2mm })
   #if level == 1 {
@@ -70,7 +64,7 @@
 #let poster(body) = {
   set page(
     paper: "a0",
-    margin: (x: 8mm, y: 8mm),
+    margin: (x: 35mm, y: 35mm),
   )
   set text(
     font: "BIZ UDPGothic",

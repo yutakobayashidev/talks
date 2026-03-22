@@ -5,7 +5,7 @@
 #block(inset: 4mm)[
   #grid(
     columns: (1fr, auto),
-    column-gutter: 10mm,
+    column-gutter: 20mm,
     align: (left, top),
     [
       #text(
@@ -30,7 +30,7 @@
 
   #grid(
     columns: (1.18fr, 0.82fr),
-    column-gutter: 10mm,
+    column-gutter: 20mm,
     align: (left, top),
     [
       #section(
