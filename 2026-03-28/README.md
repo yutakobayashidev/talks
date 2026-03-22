@@ -2,7 +2,7 @@
 
 2026/03/28
 
-KEDI UTokyo
+KdEi UTokyo
 
 ## References
 

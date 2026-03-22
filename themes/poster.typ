@@ -73,7 +73,7 @@
     margin: (x: 8mm, y: 8mm),
   )
   set text(
-    font: "Noto Sans CJK JP",
+    font: "BIZ UDPGothic",
     weight: "medium",
     size: 22pt,
     fill: rgb("#111111"),

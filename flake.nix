@@ -77,6 +77,7 @@
                   eb-garamond
                   noto-fonts-cjk-serif
                   noto-fonts-cjk-sans
+                  biz-ud-gothic
                   hackgen-font
                 ]
                 ++ [ garamond-math ]
@@ -86,6 +87,7 @@
                 export TYPST_FONT_PATHS="${pkgs.eb-garamond}/share/fonts/opentype"
                 export TYPST_FONT_PATHS="$TYPST_FONT_PATHS:${pkgs.noto-fonts-cjk-serif}/share/fonts/opentype/noto-cjk"
                 export TYPST_FONT_PATHS="$TYPST_FONT_PATHS:${pkgs.noto-fonts-cjk-sans}/share/fonts/opentype/noto-cjk"
+                export TYPST_FONT_PATHS="$TYPST_FONT_PATHS:${pkgs.biz-ud-gothic}/share/fonts/truetype"
                 export TYPST_FONT_PATHS="$TYPST_FONT_PATHS:${pkgs.hackgen-font}/share/fonts/hackgen"
                 export TYPST_FONT_PATHS="$TYPST_FONT_PATHS:${garamond-math}/share/fonts/opentype"
                 export TYPST_PACKAGE_PATH="${typstPackagesCache}/typst/packages"

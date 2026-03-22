@@ -4,4 +4,4 @@ Slides & posters for my talks, built with [Typst](https://typst.app/) and [Nix](
 
 ###### 2026
 
-- `ja` [市民科学と分散技術が支える、開かれたインターネット](./2026-03-28) - KEDI UTokyo
+- `ja` [市民科学と分散技術が支える、開かれたインターネット](./2026-03-28) - KdEi UTokyo
