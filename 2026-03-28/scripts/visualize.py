@@ -9,7 +9,6 @@ Usage:
 """
 
 import argparse
-import glob as globmod
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -22,15 +21,24 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 import json
-import os
 
-# Japanese font support
+# Japanese font support — register BIZ UDPGothic from Nix store or system
 import matplotlib.font_manager as fm
-_noto = fm.findfont(fm.FontProperties(family='Noto Sans CJK JP'))
-if 'Noto' in _noto:
-    plt.rcParams['font.family'] = ['Noto Sans CJK JP', 'sans-serif']
-else:
-    plt.rcParams['font.family'] = ['Hiragino Sans', 'Hiragino Kaku Gothic Pro', 'sans-serif']
+import subprocess
+_font_dirs = ['/nix/store']
+try:
+    _nix_path = subprocess.run(
+        ['nix', 'build', 'nixpkgs#biz-ud-gothic', '--no-link', '--print-out-paths'],
+        capture_output=True, text=True, timeout=30,
+    )
+    if _nix_path.returncode == 0:
+        _font_dirs = [_nix_path.stdout.strip() + '/share/fonts/truetype']
+except (FileNotFoundError, subprocess.TimeoutExpired):
+    pass
+for _d in _font_dirs:
+    for _f in fm.findSystemFonts(fontpaths=[_d]):
+        fm.fontManager.addfont(_f)
+plt.rcParams['font.family'] = ['BIZ UDPGothic', 'sans-serif']
 plt.rcParams['axes.unicode_minus'] = False
 
 ROOT = Path(__file__).resolve().parent.parent
