@@ -101,8 +101,7 @@
         [
           *イラン:*
           - VPN利用率86%だが、政府はDPIでVPN通信を選択的に遅延させ「繋がるが動かない」状態を作りデジタル疲労を誘発
-          - Psiphon Conduit: ピーク時2,600万接続試行
-          - Conduit: 海外40万人が帯域共有
+          - Psiphon: ピーク時2,600万接続試行、海外40万人がConduit経由で帯域共有
           - Starlink約5万台密輸、軍用ジャマーで最大80%パケットロス。スパイ認定時は死刑
 
           *ベネズエラ:*
@@ -119,8 +118,96 @@
         [
           公開データから観測できたことと、データだけでは分からなかったことを整理した。この区別を明示することで、公開データに基づく研究の到達点と限界を示し、今後どのような観測手法や情報源が必要かを考える土台とした。
 
-          #v(4mm)
-          #image("assets/fig6_visibility_matrix.png", width: 100%)
+          #v(5mm)
+
+          #let vis-item(color, title, detail) = block(
+            inset: (left: 5mm, y: 2mm),
+            stroke: (left: 2.5pt + color),
+          )[
+            #text(weight: "bold", size: 17pt)[#title] \
+            #text(size: 14pt, fill: rgb("#757575"))[#detail]
+          ]
+
+          #grid(
+            columns: (1fr, 1fr),
+            column-gutter: 8mm,
+            [
+              #text(
+                weight: "bold",
+                size: 18pt,
+                fill: rgb("#43A047"),
+              )[観測できたこと]
+              #v(2mm)
+              #vis-item(
+                rgb("#43A047"),
+                [遮断の事実と時期],
+                [Cloudflare Radar: トラフィックが0になるタイムスタンプ],
+              )
+              #vis-item(
+                rgb("#43A047"),
+                [遮断の規模],
+                [全国規模 vs 局所的 / ISP別の影響],
+              )
+              #vis-item(
+                rgb("#43A047"),
+                [遮断対象サービス],
+                [OONI: DNS / HTTP / IP 別の遮断手法],
+              )
+              #vis-item(
+                rgb("#43A047"),
+                [回避ツール使用急増],
+                [Psiphon Conduit: 2,600万接続試行],
+              )
+              #vis-item(
+                rgb("#43A047"),
+                [BGPルーティング異常],
+                [Cloudflare: リーク・ハイジャックイベント],
+              )
+              #vis-item(
+                rgb("#43A047"),
+                [経済的影響],
+                [オンライン売上 80%減 / 株価 450K pt 下落],
+              )
+            ],
+            [
+              #text(
+                weight: "bold",
+                size: 18pt,
+                fill: rgb("#E53935"),
+              )[データだけでは分からなかったこと]
+              #v(2mm)
+              #vis-item(
+                rgb("#E53935"),
+                [遮断の命令者],
+                [電話で命令（書面なし）/ 法的根拠不明],
+              )
+              #vis-item(
+                rgb("#E53935"),
+                [自己検閲の実態],
+                [萎縮効果は定量化困難],
+              )
+              #vis-item(
+                rgb("#E53935"),
+                [回避の実際の成功率],
+                [速度が極端に遅い場合がある],
+              )
+              #vis-item(
+                rgb("#E53935"),
+                [オフラインの影響],
+                [精神的影響 / 医療・教育への打撃],
+              )
+              #vis-item(
+                rgb("#E53935"),
+                [Starlink等の実効性],
+                [妨害されたが部分的に機能？ データ不足],
+              )
+              #vis-item(
+                rgb("#E53935"),
+                [内部ネットワークの状態],
+                [イントラネット（SHOMA等）の監視状況],
+              )
+            ],
+          )
         ],
       )
 
