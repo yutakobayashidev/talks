@@ -9,13 +9,13 @@
     align: (left, top),
     [
       #text(
-        size: 60pt,
+        size: 68pt,
         weight: "bold",
       )[市民科学と分散技術が支える、開かれたインターネット]
       #v(4mm)
-      #text(size: 28pt)[小林優太]
+      #text(size: 32pt)[小林優太]
       #linebreak()
-      #text(size: 22pt, fill: rgb("#555555"))[N高等学校 情報科学グループ]
+      #text(size: 28pt, fill: rgb("#555555"))[N高等学校 情報科学グループ]
     ],
     [
       #qr-panel(
@@ -58,7 +58,7 @@
           #image("assets/fig5_ooni_summary.png", width: 100%)
           #v(1mm)
           #text(
-            size: 18pt,
+            size: 20pt,
             fill: rgb("#555555"),
           )[#text(weight: "bold", fill: accent)[図1:] OONI web\_connectivityによるカテゴリ別遮断状況（2025/01–2026/03）。イランは広範なカテゴリに遮断が及ぶのに対し、ベネズエラはVPN・回避ツールに集中。]
         ],
@@ -75,7 +75,7 @@
           #image("assets/fig1_iran_traffic.png", width: 100%)
           #v(1mm)
           #text(
-            size: 18pt,
+            size: 20pt,
             fill: rgb("#555555"),
           )[#text(weight: "bold", fill: accent)[図2:] Cloudflare Radarによるイランの正規化トラフィック（MIN\_MAX）推移。赤帯は遮断期間。]
           #v(4mm)
@@ -124,8 +124,8 @@
             inset: (left: 5mm, y: 2mm),
             stroke: (left: 2.5pt + color),
           )[
-            #text(weight: "bold", size: 17pt)[#title] \
-            #text(size: 14pt, fill: rgb("#757575"))[#detail]
+            #text(weight: "bold", size: 20pt)[#title] \
+            #text(size: 17pt, fill: rgb("#757575"))[#detail]
           ]
 
           #grid(
@@ -134,7 +134,7 @@
             [
               #text(
                 weight: "bold",
-                size: 18pt,
+                size: 22pt,
                 fill: rgb("#43A047"),
               )[観測できたこと]
               #v(2mm)
@@ -172,7 +172,7 @@
             [
               #text(
                 weight: "bold",
-                size: 18pt,
+                size: 22pt,
                 fill: rgb("#E53935"),
               )[データだけでは分からなかったこと]
               #v(2mm)

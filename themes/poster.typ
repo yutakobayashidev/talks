@@ -10,7 +10,7 @@
   inset: (x: 4mm, y: 4mm),
 )[
   #text(
-    size: if level == 1 { 32pt } else { 26pt },
+    size: if level == 1 { 36pt } else { 28pt },
     weight: "bold",
     fill: accent,
   )[
@@ -70,7 +70,7 @@
   set text(
     font: "BIZ UDPGothic",
     weight: "medium",
-    size: 22pt,
+    size: 24pt,
     fill: rgb("#111111"),
   )
   set par(justify: false, leading: 0.84em)
